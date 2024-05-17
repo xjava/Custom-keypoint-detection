@@ -119,7 +119,7 @@ def convert_to_coco(json_data):
         annotation = {'id': image_id,
                       "image_id": image_id,
                       "dataset_id": 6,
-                      "category_ids": 15}
+                      "category_id": 15}
 
         images.append(image)
         annotations.append(annotation)
@@ -169,7 +169,7 @@ def main():
     # Add arguments for input and output filenames
     parser.add_argument('--input_file', type=str, default='dataset/annotations/label_studio.json',
                         help='Path to the input JSON file')
-    parser.add_argument('--output_file', type=str, default='dataset/annotations/all_data.json',
+    parser.add_argument('--output_file', type=str, default='dataset/annotations/coco_data.json',
                         help='Path to the output file where processed data will be written')
 
     # Parse the arguments
