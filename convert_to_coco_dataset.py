@@ -1,5 +1,6 @@
 import json
 import argparse
+import numpy as np
 
 
 def read_json(file_path):
@@ -11,6 +12,21 @@ def read_json(file_path):
 def write_json(file_path, data):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)
+
+
+def get_polygon_area(x, y):
+    """https://en.wikipedia.org/wiki/Shoelace_formula"""
+
+    assert len(x) == len(y)
+
+    return float(0.5 * np.abs(np.dot(x, np.roll(y, 1)) - np.dot(y, np.roll(x, 1))))
+
+
+def get_polygon_bounding_box(x, y):
+    assert len(x) == len(y)
+
+    x1, y1, x2, y2 = min(x), min(y), max(x), max(y)
+    return [x1, y1, x2 - x1, y2 - y1]
 
 
 def filter_data(json_data):
@@ -119,7 +135,10 @@ def convert_to_coco(json_data):
         annotation = {'id': image_id,
                       "image_id": image_id,
                       "dataset_id": 6,
-                      "category_id": 15}
+                      "category_id": 15,
+                      'ignore': 0,
+                      "iscrowd": 0
+                      }
 
         images.append(image)
         annotations.append(annotation)
@@ -133,28 +152,27 @@ def convert_to_coco(json_data):
             width = corners['original_width']
             height = corners['original_height']
             points = corners['value']['points']
-            p1x = round(points[0][0] / 100.0 * width)
-            p1y = round(points[0][1] / 100.0 * height)
-            p2x = round(points[1][0] / 100.0 * width)
-            p2y = round(points[1][1] / 100.0 * height)
-            p3x = round(points[2][0] / 100.0 * width)
-            p3y = round(points[2][1] / 100.0 * height)
-            p4x = round(points[3][0] / 100.0 * width)
-            p4y = round(points[3][1] / 100.0 * height)
+
+            # https://github.com/xjava/label-studio-converter/blob/master/label_studio_converter/converter.py
+            points_abs = [
+                (x / 100 * width, y / 100 * height) for x, y in points
+            ]
+            x, y = zip(*points_abs)
 
             image["width"] = width
             image["height"] = height
 
-            bbox_x = round(min(p1x, p4x))
-            bbox_y = round(min(p1y, p2y))
-            bbox_w = round(max(p2x, p3x) - bbox_x)
-            bbox_h = round(max(p3y, p4y) - bbox_y)
-
             annotation["width"] = width
             annotation["height"] = height
-            annotation['bbox'] = [bbox_x, bbox_y, bbox_w, bbox_h]
-            annotation['keypoints'] = [p1x, p1y, p2x, p2y, p3x, p3y, p4x, p4y]
+            annotation['bbox'] = get_polygon_bounding_box(x, y)
+            annotation['keypoints'] = [points_abs[0][0], points_abs[0][1], 2, points_abs[1][0], points_abs[1][1], 2,
+                                       points_abs[2][0], points_abs[2][1], 2, points_abs[3][0], points_abs[3][1],
+                                       2]  # https://github.com/jin-s13/COCO-WholeBody/blob/master/data_format.md Each keypoint has a 0-indexed location x,y and a visibility flag v defined as v=0: not labeled (in which case x=y=0), v=1: labeled but not visible, and v=2: labeled and visible.
             annotation['num_keypoints'] = 4
+            annotation['segmentation'] = [
+                [coord for point in points_abs for coord in point]
+            ]
+            annotation['area'] = get_polygon_area(x, y)
 
     return coco_json
 
