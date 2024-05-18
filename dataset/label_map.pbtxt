@@ -1,25 +1,21 @@
 item {
   id: 1
-  name: "Plier"
-  display_name: "plier"
+  name: "Corner"
+  display_name: "corner"
   keypoints {
     id: 0
-    label: "plier_right_handle"
+    label: "top_left"
   }
   keypoints {
     id: 1
-    label: "plier_left_handle"
+    label: "top_right"
   }
   keypoints {
     id: 2
-    label: "plier_middle"
+    label: "bottom_right"
   }
   keypoints {
     id: 3
-    label: "plier_right_head"
-  }
-  keypoints {
-    id: 4
-    label: "plier_left_head"
+    label: "bottom_left"
   }
 }
