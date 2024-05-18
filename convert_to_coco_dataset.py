@@ -64,7 +64,7 @@ def filter_data(json_data):
 
 
 def convert_to_coco(json_data):
-    categories = {
+    categories = [{
         "id": 15,
         "name": "corner",
         "color": "#dae182",
@@ -97,7 +97,7 @@ def convert_to_coco(json_data):
                 4,
                 1
             ]
-        ]}
+        ]}]
     images = []
     annotations = []
     coco_json = {'images': images, 'categories': categories, 'annotations': annotations}
