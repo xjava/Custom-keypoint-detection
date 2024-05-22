@@ -1,17 +1,7 @@
 import json
 import argparse
 import numpy as np
-
-
-def read_json(file_path):
-    with open(file_path, 'r', encoding='utf-8') as json_file:
-        json_data = json.load(json_file)
-    return json_data
-
-
-def write_json(file_path, data):
-    with open(file_path, 'w') as file:
-        json.dump(data, file, indent=4)
+from common_dataset_util import read_json, write_json, filter_label_studio_datasets
 
 
 def get_polygon_area(x, y):
@@ -29,59 +19,9 @@ def get_polygon_bounding_box(x, y):
     return [x1, y1, x2 - x1, y2 - y1]
 
 
-def filter_data(json_data):
-    filter_json = []
-    errors = []
-    max_xy = 100.0
-    for row in json_data:
-        label_id = row['id']
-        results = row['annotations'][0]['result']
-
-        corners = None
-        used_for_training = None
-        for result in results:
-
-            if result['from_name'] == 'corners':
-                corners = result
-            if result['from_name'] == 'used_for_training':
-                used_for_training = result
-
-        # just want to validate all labeled corners
-        if corners is not None:
-            points = corners['value']['points']
-            p1x = points[0][0]
-            p1y = points[0][1]
-            p2x = points[1][0]
-            p2y = points[1][1]
-            p3x = points[2][0]
-            p3y = points[2][1]
-            p4x = points[3][0]
-            p4y = points[3][1]
-
-            if len(points) != 4:
-                errors.append("incorrect corner length id = {}".format(label_id))
-            elif p1x > max_xy or p1x > max_xy or p1y > max_xy or p2x > max_xy or p2y > max_xy or p3x > max_xy or p3y > max_xy or p4x > max_xy or p4y > max_xy:
-                errors.append("incorrect size id = {}".format(label_id))
-            elif p1x > p2x or p1x > p3x or p4x > p2x or p4x > p3x:
-                errors.append("incorrect coordinate x id = {}".format(label_id))
-            elif p1y > p4y or p1y > p3y or p2y > p4y or p2y > p3y:
-                errors.append("incorrect coordinate y id = {}".format(label_id))
-
-        if used_for_training is not None:
-            if used_for_training['value']['choices'][0] == 'ใช้':
-                filter_json.append(row)
-
-    if len(errors) > 0:
-        for error in errors:
-            print(error)
-        raise TypeError("Total corner coordinate values are incorrect in {} files.".format(len(errors)))
-
-    return filter_json
-
-
 def convert_to_coco(json_data):
     categories = [{
-        "id": 15,
+        "id": 1,
         "name": "corner",
         "color": "#dae182",
         "keypoint_colors": [
@@ -122,20 +62,19 @@ def convert_to_coco(json_data):
         file_upload = row['file_upload']
         filename = file_upload[9:]  # 7ae5c878-IMG_2688.JPG ->IMG_2688.JPG
         results = row['annotations'][0]['result']
+        annotation_id = row['annotations'][0]['id']
 
         image = {'id': image_id,
                  "file_name": filename,
-                 "dataset_id": 6,
-                 "category_ids": [15],
+                 "category_ids": [1],
                  "annotated": True,
                  "annotating": [],
                  "num_annotations": 1,
                  "metadata": {},
                  }
-        annotation = {'id': image_id,
+        annotation = {'id': annotation_id,
                       "image_id": image_id,
-                      "dataset_id": 6,
-                      "category_id": 15,
+                      "category_id": 1,
                       'ignore': 0,
                       "iscrowd": 0
                       }
@@ -165,9 +104,9 @@ def convert_to_coco(json_data):
             annotation["width"] = width
             annotation["height"] = height
             annotation['bbox'] = get_polygon_bounding_box(x, y)
-            annotation['keypoints'] = [points_abs[0][0], points_abs[0][1], 2, points_abs[1][0], points_abs[1][1], 2,
-                                       points_abs[2][0], points_abs[2][1], 2, points_abs[3][0], points_abs[3][1],
-                                       2]  # https://github.com/jin-s13/COCO-WholeBody/blob/master/data_format.md Each keypoint has a 0-indexed location x,y and a visibility flag v defined as v=0: not labeled (in which case x=y=0), v=1: labeled but not visible, and v=2: labeled and visible.
+            annotation['keypoints'] = [points_abs[0][0], points_abs[0][1], 1, points_abs[1][0], points_abs[1][1], 1,
+                                       points_abs[2][0], points_abs[2][1], 1, points_abs[3][0], points_abs[3][1],
+                                       1]  # https://github.com/jin-s13/COCO-WholeBody/blob/master/data_format.md Each keypoint has a 0-indexed location x,y and a visibility flag v defined as v=0: not labeled (in which case x=y=0), v=1: labeled but not visible, and v=2: labeled and visible.
             annotation['num_keypoints'] = 4
             annotation['segmentation'] = [
                 [coord for point in points_abs for coord in point]
@@ -185,9 +124,9 @@ def main():
     parser = argparse.ArgumentParser(description='Read and process a JSON file.')
 
     # Add arguments for input and output filenames
-    parser.add_argument('--input_file', type=str, default='dataset/annotations/label_studio.json',
+    parser.add_argument('--input_file', type=str, default='dataset/label_studio.json',
                         help='Path to the input JSON file')
-    parser.add_argument('--output_file', type=str, default='dataset/annotations/coco_data.json',
+    parser.add_argument('--output_file', type=str, default='dataset/coco_data.json',
                         help='Path to the output file where processed data will be written')
 
     # Parse the arguments
@@ -196,7 +135,7 @@ def main():
     # Read the JSON data from the input file
     data = read_json(args.input_file)
     print("Total read from JSON file: {}".format(len(data)))
-    data = filter_data(data)
+    data = filter_label_studio_datasets(data)
     print("Total filter from JSON file: {}".format(len(data)))
     data = convert_to_coco(data)
     write_json(args.output_file, data)
