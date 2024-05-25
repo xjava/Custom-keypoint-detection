@@ -3,26 +3,32 @@ import argparse
 import os
 from PIL import Image
 from common_dataset_util import read_json, write_json, filter_label_studio_datasets
+import cv2
 
 
 def resize_image(input_image_path, output_image_path, max_size):
-    with Image.open(input_image_path) as image:
-        original_width, original_height = image.size
-        max_width, max_height = max_size
+    image = cv2.imread(input_image_path)
+    if image is None:
+        raise ValueError("Image not found or the path is incorrect")
 
-        # Calculate the new dimensions while maintaining the aspect ratio
-        aspect_ratio = original_width / original_height
+    # Get original dimensions
+    (h, w) = image.shape[:2]
 
-        if original_width / max_width > original_height / max_height:
-            new_width = max_width
-            new_height = int(max_width / aspect_ratio)
-        else:
-            new_height = max_height
-            new_width = int(max_height * aspect_ratio)
+    # Determine the scaling factor
+    if w > h:
+        ratio = max_size / float(w)
+    else:
+        ratio = max_size / float(h)
 
-        resized_image = image.resize((new_width, new_height), Image.Resampling.LANCZOS)
-        resized_image.save(output_image_path)
-        return new_width, new_height
+    # Calculate new dimensions
+    new_dimensions = (int(w * ratio), int(h * ratio))
+
+    # Resize the image
+    resized_image = cv2.resize(image, new_dimensions, interpolation=cv2.INTER_AREA)
+
+    # Save the resized image to the output path
+    cv2.imwrite(output_image_path, resized_image)
+    return new_dimensions
 
 
 def resize_dataset_in_directory(input_dir, output_dir, max_size):
@@ -72,14 +78,10 @@ if __name__ == '__main__':
                         help='Path to the input directory containing images. Default is "input_images".')
     parser.add_argument('--output_dir', type=str, default='output_dir',
                         help='Path to the output directory to save resized images. Default is "output_images".')
-    parser.add_argument('--max_width', type=int, default=1024,
-                        help='Maximum width of the resized images. Default is 800.')
-    parser.add_argument('--max_height', type=int, default=1024,
-                        help='Maximum height of the resized images. Default is 600.')
+    parser.add_argument('--max_size', type=int, default=1024,
+                        help='Maximum size of the resized images. Default is 1024.')
 
     args = parser.parse_args()
 
-    max_size = (args.max_width, args.max_height)
-
-    resize_dataset_in_directory(args.input_dir, args.output_dir, max_size)
+    resize_dataset_in_directory(args.input_dir, args.output_dir, args.max_size)
     print(f"All images resized and saved to {args.output_dir}")
