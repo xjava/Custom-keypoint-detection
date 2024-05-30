@@ -126,7 +126,7 @@ def main():
     # Add arguments for input and output filenames
     parser.add_argument('--input_file', type=str, default='dataset/label_studio.json',
                         help='Path to the input JSON file')
-    parser.add_argument('--output_file', type=str, default='dataset/coco_data.json',
+    parser.add_argument('--output_file', type=str, default='dataset/all.json',
                         help='Path to the output file where processed data will be written')
 
     # Parse the arguments

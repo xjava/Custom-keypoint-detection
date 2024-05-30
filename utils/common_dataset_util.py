@@ -1,5 +1,5 @@
 import json
-
+import os
 
 def read_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as json_file:
@@ -11,6 +11,13 @@ def write_json(file_path, data):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)
 
+def list_files(directory, extensions):
+    # List all files in the given directory
+    files = os.listdir(directory)
+    # Filter out the files that end with .csv
+
+    filtered_files = [file for file in files if file.endswith(extensions)]
+    return filtered_files
 
 def filter_label_studio_datasets(json_data):
     filtered_json = []
@@ -50,8 +57,10 @@ def filter_label_studio_datasets(json_data):
             elif p1y > p4y or p1y > p3y or p2y > p4y or p2y > p3y:
                 errors.append("incorrect coordinate y id = {}".format(label_id))
 
+        file_upload = row['file_upload']
+        is_doc = 'IMG_01' in file_upload
         if used_for_training is not None:
-            if used_for_training['value']['choices'][0] == 'ใช้':
+            if used_for_training['value']['choices'][0] == 'ใช้' and is_doc:
                 filtered_json.append(row)
 
     if len(errors) > 0:

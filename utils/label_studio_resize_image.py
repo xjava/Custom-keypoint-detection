@@ -6,7 +6,7 @@ from common_dataset_util import read_json, write_json, filter_label_studio_datas
 import cv2
 
 
-def resize_image(input_image_path, output_image_path, max_size):
+def resize_image(input_image_path, output_image_path, max_size, scale_down_only):
     image = cv2.imread(input_image_path)
     if image is None:
         raise ValueError("Image not found or the path is incorrect")
@@ -14,11 +14,14 @@ def resize_image(input_image_path, output_image_path, max_size):
     # Get original dimensions
     (h, w) = image.shape[:2]
 
-    # Determine the scaling factor
-    if w > h:
-        ratio = max_size / float(w)
+    if scale_down_only and max(h, w) < max_size:
+        ratio = 1.0
     else:
-        ratio = max_size / float(h)
+        # Determine the scaling factor
+        if w > h:
+            ratio = max_size / float(w)
+        else:
+            ratio = max_size / float(h)
 
     # Calculate new dimensions
     new_dimensions = (int(w * ratio), int(h * ratio))
@@ -31,7 +34,7 @@ def resize_image(input_image_path, output_image_path, max_size):
     return new_dimensions
 
 
-def resize_dataset_in_directory(input_dir, output_dir, max_size):
+def resize_dataset_in_directory(input_dir, output_dir, max_size, scale_down_only):
 
     input_json_path = os.path.join(input_dir, 'label_studio.json')
     input_dir_images = os.path.join(input_dir, 'images')
@@ -63,8 +66,12 @@ def resize_dataset_in_directory(input_dir, output_dir, max_size):
         filename = file_upload[9:]  # 7ae5c878-IMG_2688.JPG ->IMG_2688.JPG
         input_image_path = os.path.join(input_dir_images, filename)
         output_image_path = os.path.join(output_dir_images, filename)
-        new_width, new_height = resize_image(input_image_path, output_image_path, max_size)
-        print(f"Resized {input_image_path} {width, height} and saved to {output_image_path} {new_width, new_height}")
+        new_width, new_height = resize_image(input_image_path, output_image_path, max_size, scale_down_only)
+        if width > new_width:
+            print(f"Decrease sized {input_image_path} {width, height} and saved to {output_image_path} {new_width, new_height}")
+        else:
+            print(
+                f"Keep original size of  {input_image_path} {width, height} and saved to {output_image_path} {new_width, new_height}")
         corners['original_width'] = new_width
         corners['original_height'] = new_height
 
@@ -74,14 +81,17 @@ def resize_dataset_in_directory(input_dir, output_dir, max_size):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Resize all images in a directory while maintaining their aspect ratios.')
-    parser.add_argument('--input_dir', type=str, default='input_dir',
+    parser.add_argument('--input_dir', type=str, default='/Users/nikornlansa/Downloads/dataset',
                         help='Path to the input directory containing images. Default is "input_images".')
-    parser.add_argument('--output_dir', type=str, default='output_dir',
+    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset',
                         help='Path to the output directory to save resized images. Default is "output_images".')
-    parser.add_argument('--max_size', type=int, default=1024,
-                        help='Maximum size of the resized images. Default is 1024.')
+    parser.add_argument('--max_size', type=int, default=1536,
+                        help='Maximum size of the resized images. Default is 1536.')
+    parser.add_argument('--scale_down_only', type=bool, default=True,
+                        help='Don\'t increase the size if it is smaller than the maximum size.')
+
 
     args = parser.parse_args()
 
-    resize_dataset_in_directory(args.input_dir, args.output_dir, args.max_size)
+    resize_dataset_in_directory(args.input_dir, args.output_dir, args.max_size, args.scale_down_only)
     print(f"All images resized and saved to {args.output_dir}")
