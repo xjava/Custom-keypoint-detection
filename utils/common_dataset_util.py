@@ -1,5 +1,6 @@
-import json
 import os
+import json
+import numpy as np
 
 def read_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as json_file:
@@ -18,6 +19,20 @@ def list_files(directory, extensions):
 
     filtered_files = [file for file in files if file.endswith(extensions)]
     return filtered_files
+
+def get_polygon_area(x, y):
+    """https://en.wikipedia.org/wiki/Shoelace_formula"""
+
+    assert len(x) == len(y)
+
+    return float(0.5 * np.abs(np.dot(x, np.roll(y, 1)) - np.dot(y, np.roll(x, 1))))
+
+
+def get_polygon_bounding_box(x, y):
+    assert len(x) == len(y)
+
+    x1, y1, x2, y2 = min(x), min(y), max(x), max(y)
+    return [x1, y1, x2 - x1, y2 - y1]
 
 def filter_label_studio_datasets(json_data):
     filtered_json = []
