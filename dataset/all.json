@@ -79160,7 +79160,7 @@
         {
             "id": 1202,
             "image_id": 1202,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1501.5,
@@ -79203,7 +79203,7 @@
         {
             "id": 1203,
             "image_id": 1203,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1482.4,
@@ -79246,7 +79246,7 @@
         {
             "id": 1204,
             "image_id": 1204,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1269.7,
@@ -79289,7 +79289,7 @@
         {
             "id": 1205,
             "image_id": 1205,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1461.0,
@@ -79332,7 +79332,7 @@
         {
             "id": 1206,
             "image_id": 1206,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1509.1,
@@ -79375,7 +79375,7 @@
         {
             "id": 1207,
             "image_id": 1207,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1480.2,
@@ -79418,7 +79418,7 @@
         {
             "id": 1208,
             "image_id": 1208,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1455.7,
@@ -79461,7 +79461,7 @@
         {
             "id": 1209,
             "image_id": 1209,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1462.4,
@@ -79504,7 +79504,7 @@
         {
             "id": 1210,
             "image_id": 1210,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1461.3,
@@ -79547,7 +79547,7 @@
         {
             "id": 1211,
             "image_id": 1211,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1519.6,
@@ -79590,7 +79590,7 @@
         {
             "id": 1212,
             "image_id": 1212,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     967.9,
@@ -79633,7 +79633,7 @@
         {
             "id": 1213,
             "image_id": 1213,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     -1.5,
@@ -79676,7 +79676,7 @@
         {
             "id": 1214,
             "image_id": 1214,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1184.2,
@@ -79719,7 +79719,7 @@
         {
             "id": 1215,
             "image_id": 1215,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     916.6,
@@ -79762,7 +79762,7 @@
         {
             "id": 1216,
             "image_id": 1216,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1093.8,
@@ -79805,7 +79805,7 @@
         {
             "id": 1217,
             "image_id": 1217,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     234.2,
@@ -79848,7 +79848,7 @@
         {
             "id": 1218,
             "image_id": 1218,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1142.1,
@@ -79891,7 +79891,7 @@
         {
             "id": 1219,
             "image_id": 1219,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     450.5,
@@ -79934,7 +79934,7 @@
         {
             "id": 1220,
             "image_id": 1220,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     140.3,
@@ -79977,7 +79977,7 @@
         {
             "id": 1221,
             "image_id": 1221,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     185.7,
@@ -80020,7 +80020,7 @@
         {
             "id": 1222,
             "image_id": 1222,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     566.2,
@@ -80063,7 +80063,7 @@
         {
             "id": 1223,
             "image_id": 1223,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     806.0,
@@ -80106,7 +80106,7 @@
         {
             "id": 1224,
             "image_id": 1224,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     177.9,
@@ -80149,7 +80149,7 @@
         {
             "id": 1225,
             "image_id": 1225,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     673.1,
@@ -80192,7 +80192,7 @@
         {
             "id": 1226,
             "image_id": 1226,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1127.3,
@@ -80235,7 +80235,7 @@
         {
             "id": 1227,
             "image_id": 1227,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     426.3,
@@ -80278,7 +80278,7 @@
         {
             "id": 1228,
             "image_id": 1228,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1327.4,
@@ -80321,7 +80321,7 @@
         {
             "id": 1229,
             "image_id": 1229,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     529.4,
@@ -80364,7 +80364,7 @@
         {
             "id": 1230,
             "image_id": 1230,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1132.3,
@@ -80407,7 +80407,7 @@
         {
             "id": 1231,
             "image_id": 1231,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     394.5,
@@ -80450,7 +80450,7 @@
         {
             "id": 1232,
             "image_id": 1232,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     491.0,
@@ -80493,7 +80493,7 @@
         {
             "id": 1233,
             "image_id": 1233,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1091.2,
@@ -80536,7 +80536,7 @@
         {
             "id": 1234,
             "image_id": 1234,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     284.0,
@@ -80579,7 +80579,7 @@
         {
             "id": 1235,
             "image_id": 1235,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     886.3,
@@ -80622,7 +80622,7 @@
         {
             "id": 1236,
             "image_id": 1236,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     173.1,
@@ -80665,7 +80665,7 @@
         {
             "id": 1237,
             "image_id": 1237,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1035.9,
@@ -80708,7 +80708,7 @@
         {
             "id": 1238,
             "image_id": 1238,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1132.1,
@@ -80751,7 +80751,7 @@
         {
             "id": 1239,
             "image_id": 1239,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     462.6,
@@ -80794,7 +80794,7 @@
         {
             "id": 1240,
             "image_id": 1240,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     431.9,
@@ -80837,7 +80837,7 @@
         {
             "id": 1241,
             "image_id": 1241,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     289.1,
@@ -80880,7 +80880,7 @@
         {
             "id": 1242,
             "image_id": 1242,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     329.3,
@@ -80923,7 +80923,7 @@
         {
             "id": 1243,
             "image_id": 1243,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     372.1,
@@ -80966,7 +80966,7 @@
         {
             "id": 1244,
             "image_id": 1244,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     146.9,
@@ -81009,7 +81009,7 @@
         {
             "id": 1245,
             "image_id": 1245,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     186.1,
@@ -81052,7 +81052,7 @@
         {
             "id": 1246,
             "image_id": 1246,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     257.5,
@@ -81095,7 +81095,7 @@
         {
             "id": 1247,
             "image_id": 1247,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1220.7,
@@ -81138,7 +81138,7 @@
         {
             "id": 1248,
             "image_id": 1248,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     176.6,
@@ -81181,7 +81181,7 @@
         {
             "id": 1249,
             "image_id": 1249,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     362.6,
@@ -81224,7 +81224,7 @@
         {
             "id": 1250,
             "image_id": 1250,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     455.8,
@@ -81267,7 +81267,7 @@
         {
             "id": 1251,
             "image_id": 1251,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1528.2,
@@ -81310,7 +81310,7 @@
         {
             "id": 1252,
             "image_id": 1252,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1416.4,
@@ -81353,7 +81353,7 @@
         {
             "id": 1253,
             "image_id": 1253,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     569.1,
@@ -81396,7 +81396,7 @@
         {
             "id": 1254,
             "image_id": 1254,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     316.2,
@@ -81439,7 +81439,7 @@
         {
             "id": 1255,
             "image_id": 1255,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1008.1,
@@ -81482,7 +81482,7 @@
         {
             "id": 1256,
             "image_id": 1256,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1084.3,
@@ -81525,7 +81525,7 @@
         {
             "id": 1257,
             "image_id": 1257,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1119.4,
@@ -81568,7 +81568,7 @@
         {
             "id": 1258,
             "image_id": 1258,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     690.9,
@@ -81611,7 +81611,7 @@
         {
             "id": 1259,
             "image_id": 1259,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     496.4,
@@ -81654,7 +81654,7 @@
         {
             "id": 1260,
             "image_id": 1260,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     405.3,
@@ -81697,7 +81697,7 @@
         {
             "id": 1261,
             "image_id": 1261,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     926.1,
@@ -81740,7 +81740,7 @@
         {
             "id": 1262,
             "image_id": 1262,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     733.3,
@@ -81783,7 +81783,7 @@
         {
             "id": 1263,
             "image_id": 1263,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     379.8,
@@ -81826,7 +81826,7 @@
         {
             "id": 1264,
             "image_id": 1264,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1423.0,
@@ -81869,7 +81869,7 @@
         {
             "id": 1265,
             "image_id": 1265,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1493.6,
@@ -81912,7 +81912,7 @@
         {
             "id": 1266,
             "image_id": 1266,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     630.3,
@@ -81940,7 +81940,7 @@
         {
             "id": 1267,
             "image_id": 1267,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1472.9,
@@ -81983,7 +81983,7 @@
         {
             "id": 1268,
             "image_id": 1268,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1499.3,
@@ -82026,7 +82026,7 @@
         {
             "id": 1269,
             "image_id": 1269,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     819.5,
@@ -82069,7 +82069,7 @@
         {
             "id": 1270,
             "image_id": 1270,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1525.8,
@@ -82112,7 +82112,7 @@
         {
             "id": 1271,
             "image_id": 1271,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     657.5,
@@ -82155,7 +82155,7 @@
         {
             "id": 1272,
             "image_id": 1272,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     885.1,
@@ -82198,7 +82198,7 @@
         {
             "id": 1273,
             "image_id": 1273,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1097.6,
@@ -82241,7 +82241,7 @@
         {
             "id": 1274,
             "image_id": 1274,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1392.4,
@@ -82284,7 +82284,7 @@
         {
             "id": 1275,
             "image_id": 1275,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     798.0,
@@ -82327,7 +82327,7 @@
         {
             "id": 1276,
             "image_id": 1276,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1091.0,
@@ -82370,7 +82370,7 @@
         {
             "id": 1277,
             "image_id": 1277,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     508.9,
@@ -82413,7 +82413,7 @@
         {
             "id": 1278,
             "image_id": 1278,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     559.5,
@@ -82456,7 +82456,7 @@
         {
             "id": 1279,
             "image_id": 1279,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1048.5,
@@ -82499,7 +82499,7 @@
         {
             "id": 1280,
             "image_id": 1280,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1084.3,
@@ -82542,7 +82542,7 @@
         {
             "id": 1281,
             "image_id": 1281,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1046.8,
@@ -82585,7 +82585,7 @@
         {
             "id": 1282,
             "image_id": 1282,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1119.2,
@@ -82628,7 +82628,7 @@
         {
             "id": 1283,
             "image_id": 1283,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1410.3,
@@ -82671,7 +82671,7 @@
         {
             "id": 1284,
             "image_id": 1284,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1488.9,
@@ -82714,7 +82714,7 @@
         {
             "id": 1285,
             "image_id": 1285,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1102.9,
@@ -82757,7 +82757,7 @@
         {
             "id": 1286,
             "image_id": 1286,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1508.6,
@@ -82800,7 +82800,7 @@
         {
             "id": 1287,
             "image_id": 1287,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1530.9,
@@ -82843,7 +82843,7 @@
         {
             "id": 1288,
             "image_id": 1288,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     692.2,
@@ -82886,7 +82886,7 @@
         {
             "id": 1289,
             "image_id": 1289,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     713.4,
@@ -82929,7 +82929,7 @@
         {
             "id": 1290,
             "image_id": 1290,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     950.6,
@@ -82972,7 +82972,7 @@
         {
             "id": 1291,
             "image_id": 1291,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1123.5,
@@ -83015,7 +83015,7 @@
         {
             "id": 1292,
             "image_id": 1292,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     839.9,
@@ -83058,7 +83058,7 @@
         {
             "id": 1293,
             "image_id": 1293,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1186.6,
@@ -83101,7 +83101,7 @@
         {
             "id": 1294,
             "image_id": 1294,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     456.6,
@@ -83144,7 +83144,7 @@
         {
             "id": 1295,
             "image_id": 1295,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     803.7,
@@ -83187,7 +83187,7 @@
         {
             "id": 1296,
             "image_id": 1296,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1004.0,
@@ -83230,7 +83230,7 @@
         {
             "id": 1297,
             "image_id": 1297,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     483.7,
@@ -83273,7 +83273,7 @@
         {
             "id": 1298,
             "image_id": 1298,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1401.5,
@@ -83316,7 +83316,7 @@
         {
             "id": 1299,
             "image_id": 1299,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     526.8,
@@ -83359,7 +83359,7 @@
         {
             "id": 1300,
             "image_id": 1300,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1305.5,
@@ -83402,7 +83402,7 @@
         {
             "id": 1301,
             "image_id": 1301,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     793.9,
@@ -83445,7 +83445,7 @@
         {
             "id": 1302,
             "image_id": 1302,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     277.4,
@@ -83488,7 +83488,7 @@
         {
             "id": 1303,
             "image_id": 1303,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     564.4,
@@ -83531,7 +83531,7 @@
         {
             "id": 1304,
             "image_id": 1304,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     924.8,
@@ -83574,7 +83574,7 @@
         {
             "id": 1305,
             "image_id": 1305,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     488.9,
@@ -83617,7 +83617,7 @@
         {
             "id": 1306,
             "image_id": 1306,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1480.8,
@@ -83660,7 +83660,7 @@
         {
             "id": 1307,
             "image_id": 1307,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1199.3,
@@ -83703,7 +83703,7 @@
         {
             "id": 1308,
             "image_id": 1308,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1526.2,
@@ -83746,7 +83746,7 @@
         {
             "id": 1309,
             "image_id": 1309,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     426.6,
@@ -83789,7 +83789,7 @@
         {
             "id": 1310,
             "image_id": 1310,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     975.7,
@@ -83832,7 +83832,7 @@
         {
             "id": 1311,
             "image_id": 1311,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1523.0,
@@ -83875,7 +83875,7 @@
         {
             "id": 1312,
             "image_id": 1312,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1520.9,
@@ -83918,7 +83918,7 @@
         {
             "id": 1313,
             "image_id": 1313,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1321.8,
@@ -83961,7 +83961,7 @@
         {
             "id": 1314,
             "image_id": 1314,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1476.1,
@@ -84004,7 +84004,7 @@
         {
             "id": 1315,
             "image_id": 1315,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1470.7,
@@ -84047,7 +84047,7 @@
         {
             "id": 1316,
             "image_id": 1316,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1536.8,
@@ -84090,7 +84090,7 @@
         {
             "id": 1317,
             "image_id": 1317,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     784.1,
@@ -84133,7 +84133,7 @@
         {
             "id": 1318,
             "image_id": 1318,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1349.6,
@@ -84176,7 +84176,7 @@
         {
             "id": 1319,
             "image_id": 1319,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1358.9,
@@ -84219,7 +84219,7 @@
         {
             "id": 1320,
             "image_id": 1320,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1485.8,
@@ -84262,7 +84262,7 @@
         {
             "id": 1321,
             "image_id": 1321,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     554.1,
@@ -84305,7 +84305,7 @@
         {
             "id": 1322,
             "image_id": 1322,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     639.7,
@@ -84348,7 +84348,7 @@
         {
             "id": 1323,
             "image_id": 1323,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     609.4,
@@ -84391,7 +84391,7 @@
         {
             "id": 1324,
             "image_id": 1324,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     643.7,
@@ -84434,7 +84434,7 @@
         {
             "id": 1325,
             "image_id": 1325,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     912.8,
@@ -84477,7 +84477,7 @@
         {
             "id": 1326,
             "image_id": 1326,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     537.1,
@@ -84520,7 +84520,7 @@
         {
             "id": 1327,
             "image_id": 1327,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     693.3,
@@ -84563,7 +84563,7 @@
         {
             "id": 1328,
             "image_id": 1328,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1179.5,
@@ -84606,7 +84606,7 @@
         {
             "id": 1329,
             "image_id": 1329,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     371.5,
@@ -84649,7 +84649,7 @@
         {
             "id": 1330,
             "image_id": 1330,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     787.4,
@@ -84692,7 +84692,7 @@
         {
             "id": 1331,
             "image_id": 1331,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     521.5,
@@ -84735,7 +84735,7 @@
         {
             "id": 1332,
             "image_id": 1332,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     687.1,
@@ -84778,7 +84778,7 @@
         {
             "id": 1333,
             "image_id": 1333,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     559.4,
@@ -84821,7 +84821,7 @@
         {
             "id": 1334,
             "image_id": 1334,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     877.9,
@@ -84864,7 +84864,7 @@
         {
             "id": 1335,
             "image_id": 1335,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     901.1,
@@ -84907,7 +84907,7 @@
         {
             "id": 1336,
             "image_id": 1336,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1520.1,
@@ -84950,7 +84950,7 @@
         {
             "id": 1337,
             "image_id": 1337,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     528.7,
@@ -84993,7 +84993,7 @@
         {
             "id": 1338,
             "image_id": 1338,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     437.8,
@@ -85036,7 +85036,7 @@
         {
             "id": 1339,
             "image_id": 1339,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     518.0,
@@ -85079,7 +85079,7 @@
         {
             "id": 1340,
             "image_id": 1340,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1530.4,
@@ -85122,7 +85122,7 @@
         {
             "id": 1341,
             "image_id": 1341,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     716.8,
@@ -85165,7 +85165,7 @@
         {
             "id": 1342,
             "image_id": 1342,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     715.7,
@@ -85208,7 +85208,7 @@
         {
             "id": 1343,
             "image_id": 1343,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     633.9,
@@ -85251,7 +85251,7 @@
         {
             "id": 1344,
             "image_id": 1344,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1490.4,
@@ -85294,7 +85294,7 @@
         {
             "id": 1345,
             "image_id": 1345,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     248.5,
@@ -85337,7 +85337,7 @@
         {
             "id": 1346,
             "image_id": 1346,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     271.4,
@@ -85380,7 +85380,7 @@
         {
             "id": 1347,
             "image_id": 1347,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     825.0,
@@ -85423,7 +85423,7 @@
         {
             "id": 1348,
             "image_id": 1348,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     392.3,
@@ -85466,7 +85466,7 @@
         {
             "id": 1349,
             "image_id": 1349,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1271.9,
@@ -85509,7 +85509,7 @@
         {
             "id": 1350,
             "image_id": 1350,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     701.5,
@@ -85552,7 +85552,7 @@
         {
             "id": 1351,
             "image_id": 1351,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     787.6,
@@ -85595,7 +85595,7 @@
         {
             "id": 1352,
             "image_id": 1352,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     533.7,
@@ -85638,7 +85638,7 @@
         {
             "id": 1353,
             "image_id": 1353,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     273.0,
@@ -85681,7 +85681,7 @@
         {
             "id": 1354,
             "image_id": 1354,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     493.5,
@@ -85724,7 +85724,7 @@
         {
             "id": 1355,
             "image_id": 1355,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     515.8,
@@ -85767,7 +85767,7 @@
         {
             "id": 1356,
             "image_id": 1356,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1247.0,
@@ -85810,7 +85810,7 @@
         {
             "id": 1357,
             "image_id": 1357,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     671.7,
@@ -85853,7 +85853,7 @@
         {
             "id": 1358,
             "image_id": 1358,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     547.4,
@@ -85896,7 +85896,7 @@
         {
             "id": 1359,
             "image_id": 1359,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1025.2,
@@ -85939,7 +85939,7 @@
         {
             "id": 1360,
             "image_id": 1360,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     922.1,
@@ -85982,7 +85982,7 @@
         {
             "id": 1361,
             "image_id": 1361,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     799.0,
@@ -86025,7 +86025,7 @@
         {
             "id": 1362,
             "image_id": 1362,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1354.7,
@@ -86068,7 +86068,7 @@
         {
             "id": 1363,
             "image_id": 1363,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1384.6,
@@ -86111,7 +86111,7 @@
         {
             "id": 1364,
             "image_id": 1364,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1140.3,
@@ -86154,7 +86154,7 @@
         {
             "id": 1365,
             "image_id": 1365,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1535.4,
@@ -86197,7 +86197,7 @@
         {
             "id": 1366,
             "image_id": 1366,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     733.8,
@@ -86240,7 +86240,7 @@
         {
             "id": 1367,
             "image_id": 1367,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1020.9,
@@ -86283,7 +86283,7 @@
         {
             "id": 1368,
             "image_id": 1368,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1458.2,
@@ -86326,7 +86326,7 @@
         {
             "id": 1369,
             "image_id": 1369,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1394.3,
@@ -86369,7 +86369,7 @@
         {
             "id": 1370,
             "image_id": 1370,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1058.3,
@@ -86412,7 +86412,7 @@
         {
             "id": 1371,
             "image_id": 1371,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     347.1,
@@ -86455,7 +86455,7 @@
         {
             "id": 1372,
             "image_id": 1372,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1509.6,
@@ -86498,7 +86498,7 @@
         {
             "id": 1373,
             "image_id": 1373,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1120.1,
@@ -86541,7 +86541,7 @@
         {
             "id": 1374,
             "image_id": 1374,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1503.9,
@@ -86584,7 +86584,7 @@
         {
             "id": 1375,
             "image_id": 1375,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1535.6,
@@ -86627,7 +86627,7 @@
         {
             "id": 1376,
             "image_id": 1376,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     923.6,
@@ -86670,7 +86670,7 @@
         {
             "id": 1377,
             "image_id": 1377,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1226.8,
@@ -86713,7 +86713,7 @@
         {
             "id": 1378,
             "image_id": 1378,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     995.3,
@@ -86756,7 +86756,7 @@
         {
             "id": 1379,
             "image_id": 1379,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1187.9,
@@ -86799,7 +86799,7 @@
         {
             "id": 1380,
             "image_id": 1380,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     453.7,
@@ -86842,7 +86842,7 @@
         {
             "id": 1381,
             "image_id": 1381,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1535.5,
@@ -86885,7 +86885,7 @@
         {
             "id": 1382,
             "image_id": 1382,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1497.0,
@@ -86928,7 +86928,7 @@
         {
             "id": 1383,
             "image_id": 1383,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1201.2,
@@ -86971,7 +86971,7 @@
         {
             "id": 1384,
             "image_id": 1384,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1017.2,
@@ -87014,7 +87014,7 @@
         {
             "id": 1385,
             "image_id": 1385,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1534.5,
@@ -87057,7 +87057,7 @@
         {
             "id": 1386,
             "image_id": 1386,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     465.2,
@@ -87100,7 +87100,7 @@
         {
             "id": 1387,
             "image_id": 1387,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1388.1,
@@ -87143,7 +87143,7 @@
         {
             "id": 1388,
             "image_id": 1388,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     792.1,
@@ -87186,7 +87186,7 @@
         {
             "id": 1389,
             "image_id": 1389,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1463.1,
@@ -87229,7 +87229,7 @@
         {
             "id": 1390,
             "image_id": 1390,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     573.9,
@@ -87272,7 +87272,7 @@
         {
             "id": 1391,
             "image_id": 1391,
-            "category_id": 3,
+            "category_id": 1,
             "segmentation": [
                 [
                     1521.9,
@@ -87315,7 +87315,7 @@
         {
             "id": 1392,
             "image_id": 1392,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1004.8,
@@ -87358,7 +87358,7 @@
         {
             "id": 1393,
             "image_id": 1393,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1047.9,
@@ -87401,7 +87401,7 @@
         {
             "id": 1394,
             "image_id": 1394,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     998.9,
@@ -87444,7 +87444,7 @@
         {
             "id": 1395,
             "image_id": 1395,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1145.8,
@@ -87487,7 +87487,7 @@
         {
             "id": 1396,
             "image_id": 1396,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     956.3,
@@ -87530,7 +87530,7 @@
         {
             "id": 1397,
             "image_id": 1397,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1076.5,
@@ -87573,7 +87573,7 @@
         {
             "id": 1398,
             "image_id": 1398,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     537.2,
@@ -87616,7 +87616,7 @@
         {
             "id": 1399,
             "image_id": 1399,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     956.3,
@@ -87659,7 +87659,7 @@
         {
             "id": 1400,
             "image_id": 1400,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1100.7,
@@ -87702,7 +87702,7 @@
         {
             "id": 1401,
             "image_id": 1401,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1057.8,
@@ -87745,7 +87745,7 @@
         {
             "id": 1402,
             "image_id": 1402,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     983.6,
@@ -87788,7 +87788,7 @@
         {
             "id": 1403,
             "image_id": 1403,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     983.4,
@@ -87831,7 +87831,7 @@
         {
             "id": 1404,
             "image_id": 1404,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1015.6,
@@ -87874,7 +87874,7 @@
         {
             "id": 1405,
             "image_id": 1405,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     920.0,
@@ -87917,7 +87917,7 @@
         {
             "id": 1406,
             "image_id": 1406,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     873.0,
@@ -87960,7 +87960,7 @@
         {
             "id": 1407,
             "image_id": 1407,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1101.4,
@@ -88003,7 +88003,7 @@
         {
             "id": 1408,
             "image_id": 1408,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     897.0,
@@ -88046,7 +88046,7 @@
         {
             "id": 1409,
             "image_id": 1409,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     962.5,
@@ -88089,7 +88089,7 @@
         {
             "id": 1410,
             "image_id": 1410,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     723.4,
@@ -88132,7 +88132,7 @@
         {
             "id": 1411,
             "image_id": 1411,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     969.4,
@@ -88175,7 +88175,7 @@
         {
             "id": 1412,
             "image_id": 1412,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     919.5,
@@ -88218,7 +88218,7 @@
         {
             "id": 1413,
             "image_id": 1413,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1019.8,
@@ -88261,7 +88261,7 @@
         {
             "id": 1414,
             "image_id": 1414,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     845.5,
@@ -88304,7 +88304,7 @@
         {
             "id": 1415,
             "image_id": 1415,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1092.3,
@@ -88347,7 +88347,7 @@
         {
             "id": 1416,
             "image_id": 1416,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     846.8,
@@ -88390,7 +88390,7 @@
         {
             "id": 1417,
             "image_id": 1417,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     972.3,
@@ -88433,7 +88433,7 @@
         {
             "id": 1418,
             "image_id": 1418,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     900.3,
@@ -88476,7 +88476,7 @@
         {
             "id": 1419,
             "image_id": 1419,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     969.0,
@@ -88519,7 +88519,7 @@
         {
             "id": 1420,
             "image_id": 1420,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     815.7,
@@ -88562,7 +88562,7 @@
         {
             "id": 1421,
             "image_id": 1421,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1038.7,
@@ -88605,7 +88605,7 @@
         {
             "id": 1422,
             "image_id": 1422,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     994.4,
@@ -88648,7 +88648,7 @@
         {
             "id": 1423,
             "image_id": 1423,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1005.7,
@@ -88691,7 +88691,7 @@
         {
             "id": 1424,
             "image_id": 1424,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1026.7,
@@ -88734,7 +88734,7 @@
         {
             "id": 1425,
             "image_id": 1425,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1147.7,
@@ -88777,7 +88777,7 @@
         {
             "id": 1426,
             "image_id": 1426,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     969.6,
@@ -88820,7 +88820,7 @@
         {
             "id": 1427,
             "image_id": 1427,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     804.8,
@@ -88863,7 +88863,7 @@
         {
             "id": 1428,
             "image_id": 1428,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     865.9,
@@ -88906,7 +88906,7 @@
         {
             "id": 1429,
             "image_id": 1429,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     331.1,
@@ -88949,7 +88949,7 @@
         {
             "id": 1430,
             "image_id": 1430,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     905.2,
@@ -88992,7 +88992,7 @@
         {
             "id": 1431,
             "image_id": 1431,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     864.7,
@@ -89035,7 +89035,7 @@
         {
             "id": 1432,
             "image_id": 1432,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1037.9,
@@ -89078,7 +89078,7 @@
         {
             "id": 1433,
             "image_id": 1433,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     183.4,
@@ -89121,7 +89121,7 @@
         {
             "id": 1434,
             "image_id": 1434,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     253.9,
@@ -89164,7 +89164,7 @@
         {
             "id": 1435,
             "image_id": 1435,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     189.0,
@@ -89207,7 +89207,7 @@
         {
             "id": 1436,
             "image_id": 1436,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     655.7,
@@ -89250,7 +89250,7 @@
         {
             "id": 1437,
             "image_id": 1437,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1443.8,
@@ -89293,7 +89293,7 @@
         {
             "id": 1438,
             "image_id": 1438,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     882.7,
@@ -89336,7 +89336,7 @@
         {
             "id": 1439,
             "image_id": 1439,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     598.4,
@@ -89379,7 +89379,7 @@
         {
             "id": 1440,
             "image_id": 1440,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     647.9,
@@ -89422,7 +89422,7 @@
         {
             "id": 1441,
             "image_id": 1441,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     620.0,
@@ -89465,7 +89465,7 @@
         {
             "id": 1442,
             "image_id": 1442,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     289.8,
@@ -89508,7 +89508,7 @@
         {
             "id": 1443,
             "image_id": 1443,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     303.5,
@@ -89551,7 +89551,7 @@
         {
             "id": 1444,
             "image_id": 1444,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     320.7,
@@ -89594,7 +89594,7 @@
         {
             "id": 1445,
             "image_id": 1445,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     263.5,
@@ -89637,7 +89637,7 @@
         {
             "id": 1446,
             "image_id": 1446,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     939.0,
@@ -89680,7 +89680,7 @@
         {
             "id": 1447,
             "image_id": 1447,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     782.0,
@@ -89723,7 +89723,7 @@
         {
             "id": 1448,
             "image_id": 1448,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     289.4,
@@ -89766,7 +89766,7 @@
         {
             "id": 1449,
             "image_id": 1449,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     509.1,
@@ -89809,7 +89809,7 @@
         {
             "id": 1450,
             "image_id": 1450,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     269.4,
@@ -89852,7 +89852,7 @@
         {
             "id": 1451,
             "image_id": 1451,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     766.5,
@@ -89895,7 +89895,7 @@
         {
             "id": 1452,
             "image_id": 1452,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     546.7,
@@ -89938,7 +89938,7 @@
         {
             "id": 1453,
             "image_id": 1453,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     378.5,
@@ -89981,7 +89981,7 @@
         {
             "id": 1454,
             "image_id": 1454,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     744.7,
@@ -90024,7 +90024,7 @@
         {
             "id": 1455,
             "image_id": 1455,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     743.7,
@@ -90067,7 +90067,7 @@
         {
             "id": 1456,
             "image_id": 1456,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     554.2,
@@ -90110,7 +90110,7 @@
         {
             "id": 1457,
             "image_id": 1457,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     817.7,
@@ -90153,7 +90153,7 @@
         {
             "id": 1458,
             "image_id": 1458,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     519.0,
@@ -90196,7 +90196,7 @@
         {
             "id": 1459,
             "image_id": 1459,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     507.9,
@@ -90239,7 +90239,7 @@
         {
             "id": 1460,
             "image_id": 1460,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1495.7,
@@ -90282,7 +90282,7 @@
         {
             "id": 1461,
             "image_id": 1461,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     649.8,
@@ -90325,7 +90325,7 @@
         {
             "id": 1462,
             "image_id": 1462,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     564.6,
@@ -90368,7 +90368,7 @@
         {
             "id": 1463,
             "image_id": 1463,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     668.2,
@@ -90411,7 +90411,7 @@
         {
             "id": 1464,
             "image_id": 1464,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     572.2,
@@ -90454,7 +90454,7 @@
         {
             "id": 1465,
             "image_id": 1465,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     728.2,
@@ -90497,7 +90497,7 @@
         {
             "id": 1466,
             "image_id": 1466,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     503.0,
@@ -90540,7 +90540,7 @@
         {
             "id": 1467,
             "image_id": 1467,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     486.4,
@@ -90583,7 +90583,7 @@
         {
             "id": 1468,
             "image_id": 1468,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     533.7,
@@ -90626,7 +90626,7 @@
         {
             "id": 1469,
             "image_id": 1469,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     512.0,
@@ -90669,7 +90669,7 @@
         {
             "id": 1470,
             "image_id": 1470,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1000.7,
@@ -90712,7 +90712,7 @@
         {
             "id": 1471,
             "image_id": 1471,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     598.4,
@@ -90755,7 +90755,7 @@
         {
             "id": 1472,
             "image_id": 1472,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     678.0,
@@ -90798,7 +90798,7 @@
         {
             "id": 1473,
             "image_id": 1473,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1169.8,
@@ -90841,7 +90841,7 @@
         {
             "id": 1474,
             "image_id": 1474,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     892.0,
@@ -90884,7 +90884,7 @@
         {
             "id": 1475,
             "image_id": 1475,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     654.9,
@@ -90927,7 +90927,7 @@
         {
             "id": 1476,
             "image_id": 1476,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     602.3,
@@ -90970,7 +90970,7 @@
         {
             "id": 1477,
             "image_id": 1477,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     800.2,
@@ -91013,7 +91013,7 @@
         {
             "id": 1478,
             "image_id": 1478,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1135.3,
@@ -91056,7 +91056,7 @@
         {
             "id": 1479,
             "image_id": 1479,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     846.0,
@@ -91099,7 +91099,7 @@
         {
             "id": 1480,
             "image_id": 1480,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     690.2,
@@ -91142,7 +91142,7 @@
         {
             "id": 1481,
             "image_id": 1481,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     684.1,
@@ -91185,7 +91185,7 @@
         {
             "id": 1482,
             "image_id": 1482,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     929.7,
@@ -91228,7 +91228,7 @@
         {
             "id": 1483,
             "image_id": 1483,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     542.8,
@@ -91271,7 +91271,7 @@
         {
             "id": 1484,
             "image_id": 1484,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1125.4,
@@ -91314,7 +91314,7 @@
         {
             "id": 1485,
             "image_id": 1485,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     896.3,
@@ -91357,7 +91357,7 @@
         {
             "id": 1486,
             "image_id": 1486,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1076.2,
@@ -91400,7 +91400,7 @@
         {
             "id": 1487,
             "image_id": 1487,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     497.9,
@@ -91443,7 +91443,7 @@
         {
             "id": 1488,
             "image_id": 1488,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     619.4,
@@ -91486,7 +91486,7 @@
         {
             "id": 1489,
             "image_id": 1489,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     681.4,
@@ -91529,7 +91529,7 @@
         {
             "id": 1490,
             "image_id": 1490,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     803.7,
@@ -91572,7 +91572,7 @@
         {
             "id": 1491,
             "image_id": 1491,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     720.5,
@@ -91615,7 +91615,7 @@
         {
             "id": 1492,
             "image_id": 1492,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     972.3,
@@ -91658,7 +91658,7 @@
         {
             "id": 1493,
             "image_id": 1493,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     728.7,
@@ -91701,7 +91701,7 @@
         {
             "id": 1494,
             "image_id": 1494,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     630.8,
@@ -91744,7 +91744,7 @@
         {
             "id": 1495,
             "image_id": 1495,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     716.1,
@@ -91787,7 +91787,7 @@
         {
             "id": 1496,
             "image_id": 1496,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     895.8,
@@ -91830,7 +91830,7 @@
         {
             "id": 1497,
             "image_id": 1497,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     415.4,
@@ -91873,7 +91873,7 @@
         {
             "id": 1498,
             "image_id": 1498,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     443.3,
@@ -91916,7 +91916,7 @@
         {
             "id": 1499,
             "image_id": 1499,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1131.2,
@@ -91959,7 +91959,7 @@
         {
             "id": 1500,
             "image_id": 1500,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1042.2,
@@ -92002,7 +92002,7 @@
         {
             "id": 1501,
             "image_id": 1501,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1336.5,
@@ -92045,7 +92045,7 @@
         {
             "id": 1502,
             "image_id": 1502,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1008.3,
@@ -92088,7 +92088,7 @@
         {
             "id": 1503,
             "image_id": 1503,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1134.7,
@@ -92131,7 +92131,7 @@
         {
             "id": 1504,
             "image_id": 1504,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1133.3,
@@ -92174,7 +92174,7 @@
         {
             "id": 1505,
             "image_id": 1505,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1027.9,
@@ -92217,7 +92217,7 @@
         {
             "id": 1506,
             "image_id": 1506,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1082.7,
@@ -92260,7 +92260,7 @@
         {
             "id": 1507,
             "image_id": 1507,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1152.2,
@@ -92303,7 +92303,7 @@
         {
             "id": 1508,
             "image_id": 1508,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     831.6,
@@ -92346,7 +92346,7 @@
         {
             "id": 1509,
             "image_id": 1509,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     521.7,
@@ -92389,7 +92389,7 @@
         {
             "id": 1510,
             "image_id": 1510,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     915.3,
@@ -92432,7 +92432,7 @@
         {
             "id": 1511,
             "image_id": 1511,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     657.9,
@@ -92475,7 +92475,7 @@
         {
             "id": 1512,
             "image_id": 1512,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     262.5,
@@ -92518,7 +92518,7 @@
         {
             "id": 1513,
             "image_id": 1513,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     705.6,
@@ -92561,7 +92561,7 @@
         {
             "id": 1514,
             "image_id": 1514,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     712.8,
@@ -92604,7 +92604,7 @@
         {
             "id": 1515,
             "image_id": 1515,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     549.8,
@@ -92647,7 +92647,7 @@
         {
             "id": 1516,
             "image_id": 1516,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1132.6,
@@ -92690,7 +92690,7 @@
         {
             "id": 1517,
             "image_id": 1517,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     510.4,
@@ -92733,7 +92733,7 @@
         {
             "id": 1518,
             "image_id": 1518,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     500.7,
@@ -92776,7 +92776,7 @@
         {
             "id": 1519,
             "image_id": 1519,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     676.6,
@@ -92819,7 +92819,7 @@
         {
             "id": 1520,
             "image_id": 1520,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     890.8,
@@ -92862,7 +92862,7 @@
         {
             "id": 1521,
             "image_id": 1521,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     745.5,
@@ -92905,7 +92905,7 @@
         {
             "id": 1522,
             "image_id": 1522,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     420.2,
@@ -92948,7 +92948,7 @@
         {
             "id": 1523,
             "image_id": 1523,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     760.9,
@@ -92991,7 +92991,7 @@
         {
             "id": 1524,
             "image_id": 1524,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     762.5,
@@ -93034,7 +93034,7 @@
         {
             "id": 1525,
             "image_id": 1525,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     751.4,
@@ -93077,7 +93077,7 @@
         {
             "id": 1526,
             "image_id": 1526,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     794.5,
@@ -93120,7 +93120,7 @@
         {
             "id": 1527,
             "image_id": 1527,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     469.1,
@@ -93163,7 +93163,7 @@
         {
             "id": 1528,
             "image_id": 1528,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     470.5,
@@ -93206,7 +93206,7 @@
         {
             "id": 1529,
             "image_id": 1529,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     388.5,
@@ -93249,7 +93249,7 @@
         {
             "id": 1530,
             "image_id": 1530,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     860.7,
@@ -93292,7 +93292,7 @@
         {
             "id": 1531,
             "image_id": 1531,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     485.2,
@@ -93335,7 +93335,7 @@
         {
             "id": 1532,
             "image_id": 1532,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     493.7,
@@ -93378,7 +93378,7 @@
         {
             "id": 1533,
             "image_id": 1533,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     437.0,
@@ -93421,7 +93421,7 @@
         {
             "id": 1534,
             "image_id": 1534,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     507.6,
@@ -93464,7 +93464,7 @@
         {
             "id": 1535,
             "image_id": 1535,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     550.1,
@@ -93507,7 +93507,7 @@
         {
             "id": 1536,
             "image_id": 1536,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     525.2,
@@ -93550,7 +93550,7 @@
         {
             "id": 1537,
             "image_id": 1537,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     438.0,
@@ -93593,7 +93593,7 @@
         {
             "id": 1538,
             "image_id": 1538,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1012.0,
@@ -93636,7 +93636,7 @@
         {
             "id": 1539,
             "image_id": 1539,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1200.3,
@@ -93679,7 +93679,7 @@
         {
             "id": 1540,
             "image_id": 1540,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     817.0,
@@ -93722,7 +93722,7 @@
         {
             "id": 1541,
             "image_id": 1541,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     564.9,
@@ -93765,7 +93765,7 @@
         {
             "id": 1542,
             "image_id": 1542,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     941.9,
@@ -93808,7 +93808,7 @@
         {
             "id": 1543,
             "image_id": 1543,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     661.4,
@@ -93851,7 +93851,7 @@
         {
             "id": 1544,
             "image_id": 1544,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     793.9,
@@ -93894,7 +93894,7 @@
         {
             "id": 1545,
             "image_id": 1545,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     750.4,
@@ -93937,7 +93937,7 @@
         {
             "id": 1546,
             "image_id": 1546,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     515.5,
@@ -93980,7 +93980,7 @@
         {
             "id": 1547,
             "image_id": 1547,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     407.4,
@@ -94023,7 +94023,7 @@
         {
             "id": 1548,
             "image_id": 1548,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     843.8,
@@ -94066,7 +94066,7 @@
         {
             "id": 1549,
             "image_id": 1549,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     641.2,
@@ -94109,7 +94109,7 @@
         {
             "id": 1550,
             "image_id": 1550,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     644.0,
@@ -94152,7 +94152,7 @@
         {
             "id": 1551,
             "image_id": 1551,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     576.4,
@@ -94195,7 +94195,7 @@
         {
             "id": 1552,
             "image_id": 1552,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1045.3,
@@ -94238,7 +94238,7 @@
         {
             "id": 1553,
             "image_id": 1553,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1143.4,
@@ -94281,7 +94281,7 @@
         {
             "id": 1554,
             "image_id": 1554,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     985.4,
@@ -94324,7 +94324,7 @@
         {
             "id": 1555,
             "image_id": 1555,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1097.6,
@@ -94367,7 +94367,7 @@
         {
             "id": 1556,
             "image_id": 1556,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     831.4,
@@ -94410,7 +94410,7 @@
         {
             "id": 1557,
             "image_id": 1557,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     730.2,
@@ -94453,7 +94453,7 @@
         {
             "id": 1558,
             "image_id": 1558,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1302.3,
@@ -94496,7 +94496,7 @@
         {
             "id": 1559,
             "image_id": 1559,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1188.7,
@@ -94539,7 +94539,7 @@
         {
             "id": 1560,
             "image_id": 1560,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     905.2,
@@ -94582,7 +94582,7 @@
         {
             "id": 1561,
             "image_id": 1561,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     950.1,
@@ -94625,7 +94625,7 @@
         {
             "id": 1562,
             "image_id": 1562,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     753.6,
@@ -94668,7 +94668,7 @@
         {
             "id": 1563,
             "image_id": 1563,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     927.8,
@@ -94711,7 +94711,7 @@
         {
             "id": 1564,
             "image_id": 1564,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1098.6,
@@ -94754,7 +94754,7 @@
         {
             "id": 1565,
             "image_id": 1565,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1005.2,
@@ -94797,7 +94797,7 @@
         {
             "id": 1566,
             "image_id": 1566,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     702.5,
@@ -94840,7 +94840,7 @@
         {
             "id": 1567,
             "image_id": 1567,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     870.9,
@@ -94883,7 +94883,7 @@
         {
             "id": 1568,
             "image_id": 1568,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     498.8,
@@ -94926,7 +94926,7 @@
         {
             "id": 1569,
             "image_id": 1569,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1124.9,
@@ -94969,7 +94969,7 @@
         {
             "id": 1570,
             "image_id": 1570,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     719.1,
@@ -95012,7 +95012,7 @@
         {
             "id": 1571,
             "image_id": 1571,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1450.4,
@@ -95055,7 +95055,7 @@
         {
             "id": 1572,
             "image_id": 1572,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     655.9,
@@ -95098,7 +95098,7 @@
         {
             "id": 1573,
             "image_id": 1573,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     952.3,
@@ -95141,7 +95141,7 @@
         {
             "id": 1574,
             "image_id": 1574,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     792.9,
@@ -95184,7 +95184,7 @@
         {
             "id": 1575,
             "image_id": 1575,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     792.9,
@@ -95227,7 +95227,7 @@
         {
             "id": 1576,
             "image_id": 1576,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     595.8,
@@ -95270,7 +95270,7 @@
         {
             "id": 1577,
             "image_id": 1577,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1351.8,
@@ -95313,7 +95313,7 @@
         {
             "id": 1578,
             "image_id": 1578,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     858.0,
@@ -95356,7 +95356,7 @@
         {
             "id": 1579,
             "image_id": 1579,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1046.5,
@@ -95399,7 +95399,7 @@
         {
             "id": 1580,
             "image_id": 1580,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     895.8,
@@ -95442,7 +95442,7 @@
         {
             "id": 1581,
             "image_id": 1581,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1076.9,
@@ -95485,7 +95485,7 @@
         {
             "id": 1582,
             "image_id": 1582,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     706.1,
@@ -95528,7 +95528,7 @@
         {
             "id": 1583,
             "image_id": 1583,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     808.7,
@@ -95571,7 +95571,7 @@
         {
             "id": 1584,
             "image_id": 1584,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     625.7,
@@ -95614,7 +95614,7 @@
         {
             "id": 1585,
             "image_id": 1585,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     989.3,
@@ -95657,7 +95657,7 @@
         {
             "id": 1586,
             "image_id": 1586,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     736.6,
@@ -95700,7 +95700,7 @@
         {
             "id": 1587,
             "image_id": 1587,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     698.7,
@@ -95743,7 +95743,7 @@
         {
             "id": 1588,
             "image_id": 1588,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     772.6,
@@ -95786,7 +95786,7 @@
         {
             "id": 1589,
             "image_id": 1589,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1017.5,
@@ -95829,7 +95829,7 @@
         {
             "id": 1590,
             "image_id": 1590,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     851.7,
@@ -95872,7 +95872,7 @@
         {
             "id": 1591,
             "image_id": 1591,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     830.6,
@@ -95915,7 +95915,7 @@
         {
             "id": 1592,
             "image_id": 1592,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     649.9,
@@ -95958,7 +95958,7 @@
         {
             "id": 1593,
             "image_id": 1593,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     613.7,
@@ -96001,7 +96001,7 @@
         {
             "id": 1594,
             "image_id": 1594,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     527.9,
@@ -96029,7 +96029,7 @@
         {
             "id": 1595,
             "image_id": 1595,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     647.0,
@@ -96072,7 +96072,7 @@
         {
             "id": 1596,
             "image_id": 1596,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1073.8,
@@ -96115,7 +96115,7 @@
         {
             "id": 1597,
             "image_id": 1597,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     779.0,
@@ -96158,7 +96158,7 @@
         {
             "id": 1598,
             "image_id": 1598,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1058.7,
@@ -96201,7 +96201,7 @@
         {
             "id": 1599,
             "image_id": 1599,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1002.6,
@@ -96244,7 +96244,7 @@
         {
             "id": 1600,
             "image_id": 1600,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1124.4,
@@ -96287,7 +96287,7 @@
         {
             "id": 1601,
             "image_id": 1601,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     849.8,
@@ -96330,7 +96330,7 @@
         {
             "id": 1602,
             "image_id": 1602,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     480.0,
@@ -96373,7 +96373,7 @@
         {
             "id": 1603,
             "image_id": 1603,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     661.8,
@@ -96416,7 +96416,7 @@
         {
             "id": 1604,
             "image_id": 1604,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     899.9,
@@ -96459,7 +96459,7 @@
         {
             "id": 1605,
             "image_id": 1605,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1101.1,
@@ -96502,7 +96502,7 @@
         {
             "id": 1606,
             "image_id": 1606,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1090.6,
@@ -96545,7 +96545,7 @@
         {
             "id": 1607,
             "image_id": 1607,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     656.7,
@@ -96588,7 +96588,7 @@
         {
             "id": 1608,
             "image_id": 1608,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1171.0,
@@ -96631,7 +96631,7 @@
         {
             "id": 1609,
             "image_id": 1609,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     228.8,
@@ -96674,7 +96674,7 @@
         {
             "id": 1610,
             "image_id": 1610,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     253.0,
@@ -96717,7 +96717,7 @@
         {
             "id": 1611,
             "image_id": 1611,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     208.1,
@@ -96760,7 +96760,7 @@
         {
             "id": 1612,
             "image_id": 1612,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     285.8,
@@ -96803,7 +96803,7 @@
         {
             "id": 1613,
             "image_id": 1613,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     662.5,
@@ -96846,7 +96846,7 @@
         {
             "id": 1614,
             "image_id": 1614,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     448.0,
@@ -96889,7 +96889,7 @@
         {
             "id": 1615,
             "image_id": 1615,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     643.5,
@@ -96932,7 +96932,7 @@
         {
             "id": 1616,
             "image_id": 1616,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     420.8,
@@ -96975,7 +96975,7 @@
         {
             "id": 1617,
             "image_id": 1617,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     651.8,
@@ -97018,7 +97018,7 @@
         {
             "id": 1618,
             "image_id": 1618,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     801.8,
@@ -97061,7 +97061,7 @@
         {
             "id": 1619,
             "image_id": 1619,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     1070.3,
@@ -97104,7 +97104,7 @@
         {
             "id": 1620,
             "image_id": 1620,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     704.7,
@@ -97147,7 +97147,7 @@
         {
             "id": 1621,
             "image_id": 1621,
-            "category_id": 7,
+            "category_id": 1,
             "segmentation": [
                 [
                     702.9,
@@ -97194,80 +97194,6 @@
             "name": "document",
             "supercategory": "",
             "color": "#ffff32",
-            "metadata": {},
-            "keypoint_colors": [
-                "#ff0000",
-                "#00ff00",
-                "#ff00ff",
-                "#0000ff"
-            ],
-            "keypoints": [
-                "top_left",
-                "top_right",
-                "bottom_right",
-                "bottom_left"
-            ],
-            "skeleton": [
-                [
-                    1,
-                    2
-                ],
-                [
-                    1,
-                    4
-                ],
-                [
-                    2,
-                    3
-                ],
-                [
-                    3,
-                    4
-                ]
-            ]
-        },
-        {
-            "id": 2,
-            "name": "board",
-            "supercategory": "",
-            "color": "#b3ffbb",
-            "metadata": {},
-            "keypoint_colors": [
-                "#ff0000",
-                "#00ff00",
-                "#ff00ff",
-                "#0000ff"
-            ],
-            "keypoints": [
-                "top_left",
-                "top_right",
-                "bottom_right",
-                "bottom_left"
-            ],
-            "skeleton": [
-                [
-                    1,
-                    2
-                ],
-                [
-                    1,
-                    4
-                ],
-                [
-                    2,
-                    3
-                ],
-                [
-                    3,
-                    4
-                ]
-            ]
-        },
-        {
-            "id": 3,
-            "name": "card",
-            "supercategory": "",
-            "color": "#ffadad",
             "metadata": {},
             "keypoint_colors": [
                 "#ff0000",
