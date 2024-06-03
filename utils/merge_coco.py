@@ -78,12 +78,7 @@ def parse_category_mapping(mapping_str):
     return mapping
 
 
-def main(coco_files=None, output_file=None, category_mapping=None):
-    if coco_files is None:
-        coco_files = ['../dataset/DocumentDetection.json', '../dataset/BoardDetection.json', '../dataset/CardDetection.json']
-    if output_file is None:
-        output_file = '../dataset/all.json'
-
+def main(coco_files, output_file, category_mapping):
     category_id_mapping = parse_category_mapping(category_mapping)
     merge_coco_files(coco_files, output_file, category_id_mapping)
     print(f'Merged {len(coco_files)} files into {output_file}')
@@ -92,13 +87,14 @@ def main(coco_files=None, output_file=None, category_mapping=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Merge multiple COCO JSON files into one with optional category ID remapping.")
-    parser.add_argument('-i', '--input', nargs='+', help="List of input COCO JSON files", required=False)
-    parser.add_argument('-o', '--output', help="Output file name", required=False)
+    parser.add_argument('-i', '--input', nargs='+', help="List of input COCO JSON files", required=False,
+                        default=['dataset/DocumentDetection.json', 'dataset/BoardDetection.json', 'dataset/CardDetection.json'])
+    parser.add_argument('-o', '--output', help="Output file name", required=False, default='dataset/all.json')
     parser.add_argument('-m', '--mapping', help="Category ID mapping in the form 'old_id1:new_id1,old_id2:new_id2,...'",
-                        required=False)
+                        required=False, default="2:1,3:1,7:1")
 
     args = parser.parse_args()
 
     main(coco_files=args.input, output_file=args.output, category_mapping=args.mapping)
 
-#python merge_coco.py -i coco1.json coco2.json coco3.json -o merged_coco.json -m "2:1,3:2"
+#python merge_coco.py -i coco1.json coco2.json coco3.json -o merged_coco.json -m "2:1,3:1,7:1"
