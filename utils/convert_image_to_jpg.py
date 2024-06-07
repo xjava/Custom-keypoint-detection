@@ -43,7 +43,7 @@ def convert_images_in_directory(directory):
 
 
 def main():
-    current_directory = '/Users/nikornlansa/Downloads/image_v2/doc/test5'
+    current_directory = '/Users/nikornlansa/Downloads/image_v3/doc'
     convert_images_in_directory(current_directory)
 
 
