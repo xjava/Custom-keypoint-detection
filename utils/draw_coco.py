@@ -1,75 +1,127 @@
-import json
-import argparse
 import os
-from PIL import Image
-from common_dataset_util import read_json, write_json, filter_label_studio_datasets
+import argparse
 import cv2
+from pycocotools.coco import COCO
+
+def draw_keypoints_and_bboxes_on_images(coco_json_path, output_folder):
+    parent = os.path.dirname(coco_json_path)
+    filename, ext = os.path.splitext(os.path.basename(coco_json_path))
+
+    images_folder = os.path.join(parent, filename)
+
+    # Create output folder if it doesn't exist
+    os.makedirs(output_folder, exist_ok=True)
+
+    # Load COCO annotations
+    coco = COCO(coco_json_path)
+
+    # Loop through all images in the COCO dataset
+    for image_info in coco.loadImgs(coco.getImgIds()):
+        image_path = os.path.join(images_folder, image_info['file_name'])
+        image = cv2.imread(image_path)
+        # Get original dimensions
+        (h, w) = image.shape[:2]
+
+        fontScale = 2
+        adjust = 60
+        circle_size = 8
+        border_thickness = 2
+        if h < 750 and w < 750:
+            fontScale = 1
+            adjust = 30
+            circle_size = 4
+            border_thickness = 1
+
+        if image is None:
+            print(f"Error loading image {image_path}")
+            continue
+
+        # Get all annotations for the current image
+        annotation_ids = coco.getAnnIds(imgIds=image_info['id'], iscrowd=False)
+        annotations = coco.loadAnns(annotation_ids)
+        print(f"Drawing {image_info['file_name']}")
+        for annotation in annotations:
+            # Draw bounding box
+            if 'bbox' in annotation:
+                x, y, width, height = annotation['bbox']
+                x, y, width, height = int(x), int(y), int(width), int(height)
+                cv2.rectangle(image, (x, y), (x + width, y + height), (255, 0, 0), 2)
+
+            # Draw keypoints
+            points = []
+            if 'keypoints' in annotation:
+                keypoints = annotation['keypoints']
+                index = 0
+                for i in range(0, len(keypoints), 3):
+                    kp_x = keypoints[i]
+                    kp_y = keypoints[i + 1]
+                    v = keypoints[i + 2]  # Visibility flag
+                    if v > 0:  # Draw keypoint if visible
+                        cv2.circle(image, (kp_x, kp_y), circle_size, (0, 0, 255), -1)
+                        points.append((kp_x, kp_y))
+
+                        if index == 0 or index == 1:
+                            kp_y = kp_y + adjust
+                        else:
+                            kp_y = kp_y - adjust
+
+                        if index == 0 or index == 3:
+                            kp_x = kp_x + adjust
+                        else:
+                            kp_x = kp_x - adjust
+                        cv2.putText(
+                            image,  # image on which to draw text
+                            f"{index + 1}",
+                            (kp_x, kp_y),  # bottom left corner of text
+                            cv2.FONT_HERSHEY_SIMPLEX,  # font to use
+                            fontScale,  # font scale
+                            (0, 255, 0),  # color
+                            5,  # line thickness
+                        )
+                        index = index + 1
+                # Draw the line
+            # border_color = (0, 255, 0)
+            # cv2.line(image, points[0], points[1], border_color, border_thickness)
+            # cv2.line(image, points[1], points[2], border_color, border_thickness)
+            # cv2.line(image, points[2], points[3], border_color, border_thickness)
+            # cv2.line(image, points[3], points[0], border_color, border_thickness)
+            # Draw Image ID
+            # font = cv2.FONT_HERSHEY_SIMPLEX
+            # bottomLeftCornerOfText = (10, 500)
+            # fontScale = 1
+            # fontColor = (0, 255, 0)
+            # thickness = 1
+            # lineType = 2
+            #
+            # cv2.putText(image, 'Hello World!',
+            #             bottomLeftCornerOfText,
+            #             font,
+            #             fontScale,
+            #             fontColor,
+            #             thickness,
+            #             lineType)
+            cv2.putText(
+                image,  # image on which to draw text
+                f"ID : {image_info['id']}",
+                (int(w / 2) - 120, adjust),  # bottom left corner of text
+                cv2.FONT_HERSHEY_SIMPLEX,  # font to use
+                fontScale,  # font scale
+                (0, 255, 0),  # color
+                5,  # line thickness
+            )
 
 
-def draw_image(input_image_path, output_image_path, keypoints):
-    image = cv2.imread(input_image_path)
-    color = (255, 0, 0)  # Line color in BGR (blue, green, red)
-    thickness = 3  # Line thickness
-    if image is None:
-        raise ValueError("Image not found or the path is incorrect")
+        # Save the image with keypoints and bounding boxes drawn
+        output_path = os.path.join(output_folder, image_info['file_name'])
+        cv2.imwrite(output_path, image)
 
-    x1, y1, v1 = round(keypoints[0]), round(keypoints[1]), keypoints[2]
-    x2, y2, v2 = round(keypoints[3]), round(keypoints[4]), keypoints[5]
-    x3, y3, v3 = round(keypoints[6]), round(keypoints[7]), keypoints[8]
-    x4, y4, v4 = round(keypoints[9]), round(keypoints[10]), keypoints[11]
-
-    # Draw the line
-    cv2.line(image, (x1, y1),  (x2, y2), (255, 0, 0), thickness)
-    cv2.line(image, (x2, y2), (x3, y3), (0, 255, 0), thickness)
-    cv2.line(image, (x3, y3), (x4, y4), (0, 0, 255), thickness)
-    cv2.line(image, (x4, y4), (x1, y1), (0, 255, 255), thickness)
-
-    # Save the image with the drawn line
-    cv2.imwrite(output_image_path, image)
-
-def resize_dataset_in_directory(input_dir, output_dir):
-
-    input_json_path = os.path.join(input_dir, 'all.json')
-    input_dir_images = os.path.join(input_dir, 'images')
-
-    output_dir_images = os.path.join(output_dir, 'images')
-
-    if not os.path.exists(output_dir_images):
-        os.makedirs(output_dir_images)
-
-    # Read the JSON data from the input file
-    data = read_json(input_json_path)
-    print("Total read from Label Studio JSON file: {}".format(len(data)))
-    annotations = data['annotations']
-    images = data['images']
-    for annotation in annotations:
-        image_id = annotation['image_id']
-        image = None
-        for im in images:
-            if im['id'] == image_id:
-                image = im
-                break
-        assert image is not None
-        filename = image['file_name']
-
-        assert image['width'] == annotation['width'] and image['height'] == annotation['height']
-        keypoints = annotation['keypoints']
-
-        input_image_path = os.path.join(input_dir_images, filename)
-        output_image_path = os.path.join(output_dir_images, filename)
-
-        draw_image(input_image_path, output_image_path, keypoints)
-        print(f"Draw and saved to {output_image_path}")
-
+    print("Keypoints and bounding boxes have been drawn and saved to the output folder.")
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(
-        description='Resize all images in a directory while maintaining their aspect ratios.')
-    parser.add_argument('--input_dir', type=str, default='/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset',
-                        help='Path to the input directory containing images. Default is "input_images".')
-    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/test_draw',
-                        help='Path to the output directory to save resized images. Default is "output_images".')
-    args = parser.parse_args()
+    parser = argparse.ArgumentParser(description='Draw keypoints and bounding boxes on COCO dataset images and save them.')
+    parser.add_argument('--coco_json_path', type=str, default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CordDetection.json', help='Path to COCO annotations JSON file.')
+    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Downloads/CordDetection_draw',
+                        help='Path to COCO annotations JSON file.')
 
-    resize_dataset_in_directory(args.input_dir, args.output_dir)
-    print(f"All images resized and saved to {args.output_dir}")
+    args = parser.parse_args()
+    draw_keypoints_and_bboxes_on_images(args.coco_json_path, args.output_dir)

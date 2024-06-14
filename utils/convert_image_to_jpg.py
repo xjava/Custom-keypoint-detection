@@ -1,6 +1,6 @@
 from PIL import Image
 import os
-#run ผ่าน command line เพราะใน pyvharm install pillow_heif ไม่ได้ python convert_to_jpg.py
+#run ผ่าน command line เพราะใน pyvharm install pillow_heif ไม่ได้ python convert_image_to_jpg.py
 from pillow_heif import register_heif_opener
 
 register_heif_opener()
@@ -43,7 +43,7 @@ def convert_images_in_directory(directory):
 
 
 def main():
-    current_directory = '/Users/nikornlansa/Downloads/image_v3/doc'
+    current_directory = '/Users/nikornlansa/Downloads/Cord'
     convert_images_in_directory(current_directory)
 
 

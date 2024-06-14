@@ -104,9 +104,9 @@ def convert_to_coco(json_data):
             annotation["width"] = width
             annotation["height"] = height
             annotation['bbox'] = get_polygon_bounding_box(x, y)
-            annotation['keypoints'] = [points_abs[0][0], points_abs[0][1], 1, points_abs[1][0], points_abs[1][1], 1,
-                                       points_abs[2][0], points_abs[2][1], 1, points_abs[3][0], points_abs[3][1],
-                                       1]  # https://github.com/jin-s13/COCO-WholeBody/blob/master/data_format.md Each keypoint has a 0-indexed location x,y and a visibility flag v defined as v=0: not labeled (in which case x=y=0), v=1: labeled but not visible, and v=2: labeled and visible.
+            annotation['keypoints'] = [points_abs[0][0], points_abs[0][1], 2, points_abs[1][0], points_abs[1][1], 2,
+                                       points_abs[2][0], points_abs[2][1], 2, points_abs[3][0], points_abs[3][1],
+                                       2]  # https://github.com/jin-s13/COCO-WholeBody/blob/master/data_format.md Each keypoint has a 0-indexed location x,y and a visibility flag v defined as v=0: not labeled (in which case x=y=0), v=1: labeled but not visible, and v=2: labeled and visible.
             annotation['num_keypoints'] = 4
             annotation['segmentation'] = [
                 [coord for point in points_abs for coord in point]

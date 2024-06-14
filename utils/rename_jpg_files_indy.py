@@ -12,9 +12,8 @@ def rename_files_in_directory(directory_path, start_sequence=1, pattern="", num_
     sequence_number = start_sequence
 
     for filename in files:
-        # Check if the file has a valid extension
-        filename_no_extension = os.path.splitext(filename)[0]
-        file_extension = os.path.splitext(filename)[1]
+        # Get the filename without extension
+        filename_no_extension, file_extension = os.path.splitext(filename)
         if file_extension in valid_extensions:
             # Format the sequence number with leading zeros
             formatted_sequence_number = f"{sequence_number:0{num_digits}d}"

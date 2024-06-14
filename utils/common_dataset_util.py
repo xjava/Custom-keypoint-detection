@@ -1,6 +1,8 @@
 import os
 import json
 import numpy as np
+import shutil
+
 
 def read_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as json_file:
@@ -12,6 +14,7 @@ def write_json(file_path, data):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)
 
+
 def list_files(directory, extensions):
     # List all files in the given directory
     files = os.listdir(directory)
@@ -19,6 +22,28 @@ def list_files(directory, extensions):
 
     filtered_files = [file for file in files if file.endswith(extensions)]
     return filtered_files
+
+
+def move_files(file_paths, destination_dir):
+    if not os.path.exists(destination_dir):
+        os.makedirs(destination_dir)
+
+    for file_path in file_paths:
+        if os.path.isfile(file_path):
+            shutil.move(file_path, destination_dir)
+            print(f"Moved: {file_path}")
+        else:
+            print(f"File not found: {file_path}")
+
+
+def custom_sort_function(path):
+    return os.path.basename(path)
+
+
+# sort path โดยใช้ชื่อไฟล์เป็นหลักไม่เกี่ยวกับ path
+def sort_path_by_filename(paths):
+    paths.sort(key=custom_sort_function)
+
 
 def get_polygon_area(x, y):
     """https://en.wikipedia.org/wiki/Shoelace_formula"""
@@ -33,6 +58,7 @@ def get_polygon_bounding_box(x, y):
 
     x1, y1, x2, y2 = min(x), min(y), max(x), max(y)
     return [x1, y1, x2 - x1, y2 - y1]
+
 
 def filter_label_studio_datasets(json_data):
     filtered_json = []
