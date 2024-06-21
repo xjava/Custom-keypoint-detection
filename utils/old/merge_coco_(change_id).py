@@ -3,9 +3,19 @@ import copy
 import argparse
 import os
 import shutil
-from coco_dataset_util import read_coco, write_coco
-import random
-def merge_coco_files(file_paths, output_file, category_mapping, shuffle, merge_image):
+
+
+def load_json(file_path):
+    with open(file_path, 'r') as f:
+        return json.load(f)
+
+
+def save_json(data, file_path):
+    with open(file_path, 'w') as f:
+        json.dump(data, f, indent=4)
+
+
+def merge_coco_files(file_paths, output_file, category_mapping, next_image_id, next_annotation_id, merge_image):
     category_id_mapping = parse_category_mapping(category_mapping)
     global out_filename
     if merge_image:
@@ -22,14 +32,11 @@ def merge_coco_files(file_paths, output_file, category_mapping, shuffle, merge_i
         "categories": []
     }
 
-    image_ids = set()
-    annotation_ids = set()
-
     new_category_id_mapping = {}
 
     seen_files = set()
     for file_path in file_paths:
-        coco_data = read_coco(file_path)
+        coco_data = load_json(file_path)
         ds_filename, ds_ext = os.path.splitext(os.path.basename(file_path))
         # Merge categories and create a mapping from old category IDs to new ones
         for category in coco_data['categories']:
@@ -50,10 +57,11 @@ def merge_coco_files(file_paths, output_file, category_mapping, shuffle, merge_i
 
         # Merge images and annotations
         for image in coco_data['images']:
-            if image['id'] in image_ids:
-                raise ValueError(f"Duplicate image id {image['id']} found in file {file_path}")
-            image_ids.add(image['id'])
             new_image = copy.deepcopy(image)
+            old_image_id = image['id']
+            new_image_id = next_image_id
+            new_image['id'] = new_image_id
+            next_image_id += 1
             merged_data['images'].append(new_image)
             # nikorn
             new_image['annotated'] = True
@@ -71,22 +79,20 @@ def merge_coco_files(file_paths, output_file, category_mapping, shuffle, merge_i
                 shutil.copy2(src_path, dest_path)
                 print(f"Copied {src_path} to {dest_path}")
 
-        for annotation in coco_data['annotations']:
-            if annotation['id'] in annotation_ids:
-                raise ValueError(f"Duplicate annotation id {annotation['id']} found in file {file_path}")
-            annotation_ids.add(annotation['id'])
-            new_annotation = copy.deepcopy(annotation)
-            new_annotation['category_id'] = category_id_mapping.get(annotation['category_id'],
-                                                                    annotation['category_id'])
-            merged_data['annotations'].append(new_annotation)
+            # Update annotations with new image and category IDs
+            for annotation in coco_data['annotations']:
+                if annotation['image_id'] == old_image_id:
+                    new_annotation = copy.deepcopy(annotation)
+                    new_annotation['id'] = next_annotation_id
+                    new_annotation['image_id'] = new_image_id
+                    new_annotation['category_id'] = category_id_mapping.get(annotation['category_id'],
+                                                                            annotation['category_id'])
+                    next_annotation_id += 1
+                    merged_data['annotations'].append(new_annotation)
 
-    if shuffle:
-        # Shuffle images and annotations
-        random.shuffle(merged_data['images'])
-        random.shuffle(merged_data['annotations'])
-
-    write_coco(output_file,merged_data)
+    save_json(merged_data, output_file)
     print(f'Merged {len(file_paths)} files into {output_file}')
+    return next_image_id, next_annotation_id
 
 
 def parse_category_mapping(mapping_str):
@@ -120,6 +126,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    merge_coco_files(args.input, args.output, args.mapping, False, args.merge_image)
+    merge_coco_files(args.input, args.output, args.mapping, 1, 1, args.merge_image)
 
 # python merge_coco_(change_id).py -i coco1.json coco2.json coco3.json -o merged_coco.json -m "2:1,3:1,7:1"

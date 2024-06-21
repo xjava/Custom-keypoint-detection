@@ -119,8 +119,8 @@ def draw_keypoints_and_bboxes_on_images(coco_json_path, output_folder):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Draw keypoints and bounding boxes on COCO dataset images and save them.')
-    parser.add_argument('--coco_json_path', type=str, default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CordDetection.json', help='Path to COCO annotations JSON file.')
-    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Downloads/CordDetection_draw',
+    parser.add_argument('--coco_json_path', type=str, default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/MendeleyDetection.json', help='Path to COCO annotations JSON file.')
+    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Downloads/MendeleyDetection_draw',
                         help='Path to COCO annotations JSON file.')
 
     args = parser.parse_args()
