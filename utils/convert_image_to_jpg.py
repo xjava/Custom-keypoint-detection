@@ -33,7 +33,7 @@ def convert_to_jpg(image_path):
 def convert_images_in_directory(directory):
     for root, _, files in os.walk(directory):
         for filename in files:
-            if filename.lower().endswith(('.png', '.jpeg', '.jpg', '.bmp', '.gif', '.tiff', '.heic', '.webp')):
+            if filename.lower().endswith(('.png', '.jpeg', '.jpg', '.bmp', '.gif', '.tiff', '.heic', '.webp',)):
                 image_path = os.path.join(root, filename)
                 convert_to_jpg(image_path)
             elif filename.endswith('DS_Store'):
@@ -43,7 +43,7 @@ def convert_images_in_directory(directory):
 
 
 def main():
-    current_directory = '/Users/nikornlansa/Downloads/Cord'
+    current_directory = '/Users/nikornlansa/Downloads/ray'
     convert_images_in_directory(current_directory)
 
 

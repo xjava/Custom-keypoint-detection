@@ -64,9 +64,9 @@ def resize_dataset_in_directory(input_dir, output_dir, max_size, scale_down_only
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Resize all images in a directory while maintaining their aspect ratios.')
-    parser.add_argument('--input_dir', type=str, default='/Users/nikornlansa/Downloads/Cord',
+    parser.add_argument('--input_dir', type=str, default='/Users/nikornlansa/Downloads/ray',
                         help='Path to the input directory containing images. Default is "input_images".')
-    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Downloads/Cord_resize',
+    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Downloads/ray_resize',
                         help='Path to the output directory to save resized images. Default is "output_images".')
     parser.add_argument('--max_size', type=int, default=1536,
                         help='Maximum size of the resized images. Default is 1536.')

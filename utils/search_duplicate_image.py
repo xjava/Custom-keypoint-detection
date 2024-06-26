@@ -56,24 +56,22 @@ def search_duplicate_image(image_dirs, search_coco_paths):
             dup_annotate_files_list.append(image_ids)
             to_delete_from_dataset.extend(image_ids[1:])
 
-    print(dup_paths_list)
-    print(dup_files_list)
-    print(f'dup paths {len(dup_paths_list)}: {dup_paths_list}')
-    print(f'dup files {len(dup_files_list)}: {dup_files_list}')
-    print(f'image paths to remove {len(to_remove)}: {to_remove}')
-    print(f'dup image_ids {len(dup_annotate_files_list)}: {dup_annotate_files_list}')
-    print(f'image ids to delete from data set {len(to_delete_from_dataset)}: {to_delete_from_dataset}')
+    print(f'\n dup paths {len(dup_paths_list)}: {dup_paths_list}')
+    print(f'\n dup files {len(dup_files_list)}: {dup_files_list}')
+    print(f'\n image paths to remove {len(to_remove)}: {to_remove}')
+    print(f'\n dup image_ids {len(dup_annotate_files_list)}: {dup_annotate_files_list}')
+    print(f'\n image ids to delete from data set {len(to_delete_from_dataset)}: {to_delete_from_dataset}')
     return to_remove
 
 if __name__ == '__main__':
-    image_dirs = ['/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/images']
-    coco_paths = ['/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/DocumentDetection.json',
-                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/DocumentDetection2.json',
-                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/BoardDetection.json',
-                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CardDetection.json',
-                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/BookDetection.json',
-                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/MendeleyDetection.json',
-                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CordDetection.json',
+    image_dirs = ['/Users/nikornlansa/Workspace/ML/ClearScanner/Images-resize']
+    coco_paths = ['/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection.json',
+                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection2.json',
+                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/BoardDetection.json',
+                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/CardDetection.json',
+                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/BookDetection.json',
+                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/MendeleyDetection.json',
+                  '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/CordDetection.json',
                   ]
 
     search_duplicate_image(image_dirs, coco_paths)

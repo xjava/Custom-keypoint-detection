@@ -34,11 +34,11 @@ def main():
     # Set up argument parsing
     parser = argparse.ArgumentParser(
         description="Rename .jpg and .jpeg files in a directory to a sequence number with static text.")
-    parser.add_argument('--directory_path', type=str, default="/Users/nikornlansa/Downloads/Cord",
+    parser.add_argument('--directory_path', type=str, default="/Users/nikornlansa/Downloads/ray_resize",
                         help="The path to the directory containing the files to rename.")
-    parser.add_argument('--start_sequence', type=int, default=1,
+    parser.add_argument('--start_sequence', type=int, default=4302,
                         help="The starting sequence number (default is 1).")
-    parser.add_argument('--pattern', type=str, default="IMG_08_01-{seq}",
+    parser.add_argument('--pattern', type=str, default="IMG_01_01-{seq}",
                         help="The pattern for the new filenames, with {seq} as the placeholder for the sequence number (default is 'file{seq}.jpg').")
     parser.add_argument('--num_digits', type=int, default=5,
                         help="The number of digits for the sequence number, including leading zeros (default is 1).")
