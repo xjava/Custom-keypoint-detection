@@ -35,7 +35,6 @@ from __future__ import print_function
 
 import hashlib
 import io
-import sys
 import json
 import logging
 import os
@@ -86,8 +85,7 @@ logger = tf.get_logger()
 logger.setLevel(logging.INFO)
 
 _COCO_KEYPOINT_NAMES = [
-    b'plier_right_handle', b'plier_left_handle', b'plier_middle',
-    b'plier_right_head', b'plier_left_head'
+    b'top_left', b'top_right', b'bottom_right', b'bottom_left'
 ]
 
 _COCO_PART_NAMES = [

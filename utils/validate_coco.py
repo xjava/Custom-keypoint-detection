@@ -111,13 +111,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description=" ")
     parser.add_argument('-i', '--input', nargs='+', help="List of input COCO JSON files", required=False,
-                        default=['/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/DocumentDetection.json',
-                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/BoardDetection.json',
-                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CardDetection.json',
-                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/MendeleyDetection.json',
-                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/DocumentDetection2.json',
-                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/BookDetection.json',
-                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CordDetection.json'])
+                        default=['/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection.json',
+                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/BoardDetection.json',
+                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/CardDetection.json',
+                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection2.json',
+                                 '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/BookDetection.json'])
 
     args = parser.parse_args()
 

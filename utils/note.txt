@@ -1,0 +1,9 @@
+
+ขั้นตอนการจัดเตรียมข้อมูลเพื่อเอาไป train
+1. validate_coco.py  เพื่อตรวจความถูกต้องของ coco json ว่ามีอะไรผิดปกติไหม เช่น keypoints ครับไหม ตำแหน่งอยู่นอกภาพไหม เป็นต้น
+2. filter_coco.py เพ่ือเอา image id บางตัวที่เราจะไม่ใช้ train ออกจาก coco json
+3. split_coco.py อันนี้เราจะแบ่งแต่ละ dataset ออกเป็น train , val, test  และแกติเราจะไม่ทำมันถ้า dataset นั้นนิ่งแล้ว
+4. gen_train_config.py อันนี้เราจะเลือกเอา dataset แต่ละตัวที่แบ่งแล้วมารวมกันเป็น train , val, test ก้อนใหญ่
+
+
+

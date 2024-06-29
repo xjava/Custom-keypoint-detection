@@ -14,9 +14,10 @@ def create_dataset_split_info(coco_path, train_path, val_path, test_path):
 
 
 # config
-info = {'version': 1,
-          'datasets': ["DocumentDetection", "DocumentDetection2", "BoardDetection", "CardDetection", "BookDetection",
-                       "MendeleyDetection", "CordDetection"],
+info = {'version': 2,
+          # 'datasets': ["DocumentDetection", "DocumentDetection2", "BoardDetection", "CardDetection", "BookDetection",
+          #              "MendeleyDetection", "CordDetection"],
+        'datasets': ["DocumentDetection", "DocumentDetection2", "BoardDetection", "CardDetection", "BookDetection"],
           'category_mapping': "2:1,3:1,7:1"
           }
 

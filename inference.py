@@ -13,12 +13,25 @@ import numpy as np
 import tensorflow.compat.v1 as tf
 import os
 
-input_folder = "/content/gdrive/MyDrive/ML/Dataset/DocumentDetection/test_images/"
-model_path = "/content/gdrive/MyDrive/ML/Dataset/DocumentDetection/saved_model/saved_model"
-output_folder = "/content/output_folder/"
 
-colors = [(255, 0, 0), (229, 52, 235), (235, 85, 52),
-          (14, 115, 51), (14, 115, 204)]
+#input_folder = "/Users/nikornlansa/Workspace/ML/Dataset/private/"
+#input_folder = "/Users/nikornlansa/Downloads/image_v3/doc/"
+input_folder = "/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/t3/"
+model_path = "/Users/nikornlansa/Workspace/ML/Model/results/saved_model12/saved_model"
+#output_folder = "/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/output_folder12/"
+output_folder = "/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/t3_detect/"
+
+def list_files(directory, extensions):
+    # List all files in the given directory
+    files = os.listdir(directory)
+    # Filter out the files that end with .csv
+
+    filtered_files = [file for file in files if file.endswith(extensions)]
+    return filtered_files
+
+
+colors = [(0, 0, 255), (0, 255, 0), (255, 0, 255),
+          (255, 0, 0)]
 
 
 # cv2.namedWindow("display", cv2.WINDOW_NORMAL)
@@ -30,7 +43,7 @@ def process_keypoint(kp, kp_s, h, w, img):
 
 
 with tf.Session(graph=tf.Graph()) as sess:
-    tf.saved_model.loader.load(sess, ['serve'], model_path)
+    tf.saved_model.load(sess, ['serve'], model_path)
     graph = tf.get_default_graph()
     input_tensor = graph.get_tensor_by_name("serving_default_input_tensor:0")
     det_score = graph.get_tensor_by_name("StatefulPartitionedCall:6")
@@ -42,7 +55,10 @@ with tf.Session(graph=tf.Graph()) as sess:
     print("Model Loaded")
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
-    for image_path in glob.glob(input_folder + "*.jpg"):
+    files = list_files(input_folder, ('.jpg','.JPG', '.jpeg','.png', '.PNG'))
+    files.sort()
+    for file in files:
+        image_path = os.path.join(input_folder, file)
         print(image_path)
         filename = image_path.split("/")[-1]
         frame = cv2.imread(image_path)
