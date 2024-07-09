@@ -194,7 +194,7 @@ def inference_coco(model_path, coco_path, image_dir, output_dir, output_csv):
             if img is not None:
                 try:
                     original_height, original_width, _ = img.shape
-                    frame = cv2.resize(img, (512, 512), interpolation=cv2.INTER_AREA)
+                    frame = cv2.resize(img, (224, 224), interpolation=cv2.INTER_AREA)
                     frame_height, frame_width, _ = frame.shape
                     image_exp_dims = np.expand_dims(frame, axis=0)
 
@@ -315,20 +315,20 @@ if __name__ == '__main__':
         description='Draw keypoints and bounding boxes on COCO dataset images and save them.')
 
     parser.add_argument('--coco_json_path', type=str,
-                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/train/version2/dataset/test_data.json',
+                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection3.json',
                         help='Path to COCO annotations JSON file.')
     parser.add_argument('--image_dir', type=str,
-                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/images',
+                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection3',
                         help='Path to images dir.')
 
     parser.add_argument('--model_path', type=str,
-                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/train/version2/saved_model_150000/saved_model',
+                        default='/Users/nikornlansa/Workspace/ML/Model/results/saved_model_12_v5_10_224_no_bb/saved_model',
                         help='Path to COCO annotations JSON file.')
     parser.add_argument('--output_dir', type=str,
-                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/inference/v2_150000_check_test_data',
+                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/inference/v12_5_30000_no_bb_check_DocumentDetection3',
                         help='Path to COCO annotations JSON file.')
     parser.add_argument('--output_csv', type=str,
-                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/inference/v2_150000_check_test_data.csv',
+                        default='/Users/nikornlansa/Workspace/ML/ClearScanner/inference/v12_5_30000_no_bb_check_DocumentDetection3.csv',
                         help='Path to COCO annotations JSON file.')
     # parser.add_argument('--model_path', type=str,
     #                     default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/train/version1/saved_model_500000/saved_model',
