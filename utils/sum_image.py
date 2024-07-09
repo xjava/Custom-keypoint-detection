@@ -40,24 +40,28 @@ def read_csv_to_list(file_path):
 # array2 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/v3/dom.txt")
 # array3 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/v3/pui.txt")
 
-array1 = [3333,3263,3330,3016,2899,3142,3309,3426,2817,2747,3571,2796,3549,3147,3349,2909,3150,2943,3219,3514,2649,3491,2800,3516,3419,3218,2970,3156,3055,3023,3279,3062,3547,3413,2854,2746,3429,3578,2760,3495,2919,3235,3042,2898,3471,3465,2659,3474,3435,3340,3326,2792]
-array2 = [2668,2717,3330,3426,3571,2768,2710,3150,2683,3516,2744,3547,2653,3525,2855,3562,2861,3471,2663,3474,2775,2791,3435,2868,3340,2792,3410,3400]
-array3 = [2723,2668,2747,2762, 2683,2765,3263,3104,3426,2747,2768,2710, 3156,2947,2653,2855,2819,2861,2920,2989,2956,2663,2868,2640,3340,2792,2670,2671,2728,2814,3571,3349,2969,3219,2649,2763]
-array4 = [3625, 3591, 3138, 3120, 3306, 3162, 2865, 3499, 3456, 3524, 3146, 3256, 3084, 3151, 3585,2804,3487,2883,2941,3358,2994,3081,2956,3122,2676,3451,2977,3332,3336, 2845, 3408, 2867,2963
-,3497]
+# array1 = [3333,3263,3330,3016,2899,3142,3309,3426,2817,2747,3571,2796,3549,3147,3349,2909,3150,2943,3219,3514,2649,3491,2800,3516,3419,3218,2970,3156,3055,3023,3279,3062,3547,3413,2854,2746,3429,3578,2760,3495,2919,3235,3042,2898,3471,3465,2659,3474,3435,3340,3326,2792]
+# array2 = [2668,2717,3330,3426,3571,2768,2710,3150,2683,3516,2744,3547,2653,3525,2855,3562,2861,3471,2663,3474,2775,2791,3435,2868,3340,2792,3410,3400]
+# array3 = [2723,2668,2747,2762, 2683,2765,3263,3104,3426,2747,2768,2710, 3156,2947,2653,2855,2819,2861,2920,2989,2956,2663,2868,2640,3340,2792,2670,2671,2728,2814,3571,3349,2969,3219,2649,2763]
+# array4 = [3625, 3591, 3138, 3120, 3306, 3162, 2865, 3499, 3456, 3524, 3146, 3256, 3084, 3151, 3585,2804,3487,2883,2941,3358,2994,3081,2956,3122,2676,3451,2977,3332,3336, 2845, 3408, 2867,2963
+# ,3497]
+
+array1 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc3/tom_filter.txt")
+array2 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc3/dom_filter.txt")
+array3 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc3/pui_filter.txt")
 
 #remove empty string
 array1 = filter(None, array1)
 array2 = filter(None, array2)
 array3 = filter(None, array3)
-array4 = filter(None, array4)
+#array4 = filter(None, array4)
 #array4 = filter(None, array4)
 # Convert arrays to sets
 set1 = set(array1)
 set2 = set(array2)
 set3 = set(array3)
-set4 = set(array4)
-set_all = set1 | set2 | set3 | set4
+#set4 = set(array4)
+set_all = set1 | set2 | set3 #| set4
 
 # 1. Find numbers repeated in every array
 common_all = set1 & set2 & set3
@@ -95,13 +99,13 @@ print("ต้อมคนเดียว:", unique_array1_list)
 print("ดมคนเดียว:", unique_array2_list)
 print("ปุยคนเดียว:", unique_array3_list)
 
-coco_data = read_coco('/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CordDetection.json')
+#coco_data = read_coco('/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CordDetection.json')
 
 # found_image_ids, missing_image_ids = image_ids_exists(coco_data, set_all)
 #
 # filtered_coco_data = remove_image_ids(coco_data, found_image_ids)
 
-write_coco('/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CordDetection_filter.json', filtered_coco_data)
+#write_coco('/Users/nikornlansa/Workspace/ML/ClearScanner/sync/datasets/CordDetection_filter.json', filtered_coco_data)
 
 # source_directory = '/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/coco/v3/doc_v3_all'
 # destination_directory = '/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/coco/v3/doc_v3_all_selected_2'

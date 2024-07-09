@@ -14,10 +14,10 @@ def create_dataset_split_info(coco_path, train_path, val_path, test_path):
 
 
 # config
-info = {'version': 2,
+info = {'version': 5,
           # 'datasets': ["DocumentDetection", "DocumentDetection2", "BoardDetection", "CardDetection", "BookDetection",
           #              "MendeleyDetection", "CordDetection"],
-        'datasets': ["DocumentDetection", "DocumentDetection2", "BoardDetection", "CardDetection", "BookDetection"],
+        'datasets': ["DocumentDetection", "DocumentDetection2", "BoardDetection", "CardDetection", "MendeleyDetection"],
           'category_mapping': "2:1,3:1,7:1"
           }
 
@@ -45,6 +45,7 @@ if __name__ == '__main__':
         train_path = os.path.join(dataset_dir, f'{dataset}_train.json')
         val_path = os.path.join(dataset_dir, f'{dataset}_val.json')
         test_path = os.path.join(dataset_dir, f'{dataset}_test.json')
+        coco_paths.append(coco_path)
         train_paths.append(train_path)
         val_paths.append(val_path)
         test_paths.append(test_path)
@@ -62,6 +63,7 @@ if __name__ == '__main__':
         "val": val_count,
         "test": test_count
     }
+    merge_coco_files(coco_paths, os.path.join(config_dir, 'all.json'), category_mapping, True, False)
     merge_coco_files(train_paths, os.path.join(config_dir, 'train_data.json'), category_mapping, True, False)
     merge_coco_files(val_paths, os.path.join(config_dir, 'validation_data.json'), category_mapping, True, False)
     merge_coco_files(test_paths, os.path.join(config_dir, 'test_data.json'), category_mapping, True, False)

@@ -8,14 +8,17 @@ from common_dataset_util import read_json, write_json
 def read_coco(coco_path):
     print(f"Reading coco from path: {coco_path}")
     coco_data = read_json(coco_path)
-    print(f"Total images:{len(coco_data['images'])} annotations: {len(coco_data['annotations'])} categories: {len(coco_data['categories'])}")
+    print(
+        f"Total images:{len(coco_data['images'])} annotations: {len(coco_data['annotations'])} categories: {len(coco_data['categories'])}")
     return coco_data
 
 
 def write_coco(coco_path, coco_data):
     print(f"Writing coco to path: {coco_path}")
     write_json(coco_path, coco_data)
-    print(f"Total images:{len(coco_data['images'])} annotations: {len(coco_data['annotations'])} categories: {len(coco_data['categories'])}")
+    print(
+        f"Total images:{len(coco_data['images'])} annotations: {len(coco_data['annotations'])} categories: {len(coco_data['categories'])}")
+
 
 def image_ids_exists(coco_data, image_ids_to_check):
     # Extract image_ids from the 'images' section
@@ -97,3 +100,23 @@ def keep_only_image_ids(coco_data, image_ids_to_keep):
     }
 
     return filtered_coco_data
+
+
+def file_names_to_image_ids(coco_data, file_names):
+    # Create a mapping from file_name to id
+    file_name_to_id = {image['file_name']: image['id'] for image in coco_data['images']}
+
+    # Convert the list of file_names to list of ids
+    image_ids = [file_name_to_id[file_name] for file_name in file_names if file_name in file_name_to_id]
+
+    return image_ids
+
+
+def image_ids_to_file_names(coco_data, image_ids):
+    # Create a mapping from id to file_name
+    id_to_file_name = {image['id']: image['file_name'] for image in coco_data['images']}
+
+    # Convert the list of ids to list of file_names
+    file_names = [id_to_file_name[image_id] for image_id in image_ids if image_id in id_to_file_name]
+
+    return file_names

@@ -50,10 +50,10 @@ def split_coco(coco_path):
 
 if __name__ == "__main__":
     split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/DocumentDetection.json")
-    split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/DocumentDetection2.json")
-    split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/BoardDetection.json")
+    #split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/DocumentDetection2.json")
+    #split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/BoardDetection.json")
     split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/CardDetection.json")
-    split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/BookDetection.json")
-    # split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/MendeleyDetection.json")
+    #split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/BookDetection.json")
+    split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/MendeleyDetection.json")
     # split_coco("/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalization/dataset/CordDetection.json")
     #ปกติเราจะ split dataset แต่ละตัวครั้งเดียวและจะเก็บไว้แบบนี้เพื่อใช้ train และ test
