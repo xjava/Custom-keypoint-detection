@@ -193,14 +193,14 @@ def plot_detections(image_np,
 
 
 #genius scan
-model_path = '/Users/nikornlansa/Workspace/ClearScanner/DeCompiler/decompile model/genius_scan_last/documentFinder.tflite'
-image_path = '/Users/nikornlansa/Workspace/ML/ClearScanner/Images-resize/Document/01/IMG_01_01-01657.JPG'
+# model_path = '/Users/nikornlansa/Workspace/ClearScanner/DeCompiler/decompile model/genius_scan_last/documentFinder.tflite'
+# image_path = '/Users/nikornlansa/Workspace/ML/ClearScanner/Images-resize/Document/01/IMG_01_01-01657.JPG'
 
 # model_path = '/Users/nikornlansa/Workspace/ML/Model/output_model_lite12_kp_max_detect_10_320x320/detect.tflite'
 # image_path = '/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalizeAndroid/app/src/main/assets/IMG_01_01-01657.JPG'
 
-# model_path = '/Users/nikornlansa/Workspace/ML/Model/output_model_lite12_kp_max_detect_10_512x512/detect.tflite'
-# image_path = '/Users/nikornlansa/Workspace/ClearScanner/DocumentCornerLocalizeAndroid/app/src/main/assets/IMG_01_01-01363.JPG'
+model_path = '/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/train/version7/saved_model_lite_max10_512_default/detect.tflite'
+image_path = '/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/t/IMG_01_01-00167.JPG'
 
 
 
@@ -228,16 +228,16 @@ image_numpy = image.numpy()
 input_tensor = tf.convert_to_tensor(image_numpy, dtype=tf.float32)
 # Note that CenterNet doesn't require any pre-processing except resizing to
 # input size that the TensorFlow Lite Interpreter was generated with.
-input_tensor = tf.image.resize(input_tensor, (96, 96))
-(boxes, classes, scores, num_detections, kpts, kpts_scores) = detect_pose(
-    interpreter, input_tensor, include_keypoint=True)
-
-# input_tensor = tf.image.resize(input_tensor, (512, 512))
-# (boxes, classes, scores, num_detections, kpts, kpts_scores) = detect_corner(
+# input_tensor = tf.image.resize(input_tensor, (320, 320))
+# (boxes, classes, scores, num_detections, kpts, kpts_scores) = detect_pose(
 #     interpreter, input_tensor, include_keypoint=True)
-# keypoints = kpts[0][0]
-# csv_row = [keypoints[0][1], keypoints[0][0], keypoints[1][1], keypoints[1][0], keypoints[2][1], keypoints[2][0], keypoints[3][1], keypoints[3][0]]
-# draw_image(image_path, out_image_path, csv_row)
+
+input_tensor = tf.image.resize(input_tensor, (512, 512))
+(boxes, classes, scores, num_detections, kpts, kpts_scores) = detect_corner(
+    interpreter, input_tensor, include_keypoint=True)
+keypoints = kpts[0][0]
+csv_row = [keypoints[0][1], keypoints[0][0], keypoints[1][1], keypoints[1][0], keypoints[2][1], keypoints[2][0], keypoints[3][1], keypoints[3][0]]
+draw_image(image_path, out_image_path, csv_row)
 
 # vis_image = plot_detections(
 #     image_numpy[0],
