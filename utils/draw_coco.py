@@ -26,7 +26,7 @@ def draw_keypoints_and_bboxes_on_images(coco_json_path, output_folder):
         adjust = 60
         circle_size = 8
         border_thickness = 2
-        if h < 750 and w < 750:
+        if h < 500 and w < 500:
             fontScale = 1
             adjust = 30
             circle_size = 4
@@ -45,7 +45,7 @@ def draw_keypoints_and_bboxes_on_images(coco_json_path, output_folder):
             if 'bbox' in annotation:
                 x, y, width, height = annotation['bbox']
                 x, y, width, height = int(x), int(y), int(width), int(height)
-                cv2.rectangle(image, (x, y), (x + width, y + height), (255, 0, 0), 2)
+                cv2.rectangle(image, (x, y), (x + width, y + height), (255, 0, 0), border_thickness)
 
             # Draw keypoints
             points = []
@@ -80,11 +80,11 @@ def draw_keypoints_and_bboxes_on_images(coco_json_path, output_folder):
                         )
                         index = index + 1
                 # Draw the line
-            # border_color = (0, 255, 0)
-            # cv2.line(image, points[0], points[1], border_color, border_thickness)
-            # cv2.line(image, points[1], points[2], border_color, border_thickness)
-            # cv2.line(image, points[2], points[3], border_color, border_thickness)
-            # cv2.line(image, points[3], points[0], border_color, border_thickness)
+            border_color = (0, 255, 0)
+            cv2.line(image, points[0], points[1], border_color, border_thickness)
+            cv2.line(image, points[1], points[2], border_color, border_thickness)
+            cv2.line(image, points[2], points[3], border_color, border_thickness)
+            cv2.line(image, points[3], points[0], border_color, border_thickness)
             # Draw Image ID
             # font = cv2.FONT_HERSHEY_SIMPLEX
             # bottomLeftCornerOfText = (10, 500)
@@ -119,8 +119,8 @@ def draw_keypoints_and_bboxes_on_images(coco_json_path, output_folder):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Draw keypoints and bounding boxes on COCO dataset images and save them.')
-    parser.add_argument('--coco_json_path', type=str, default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/CardDetection.json', help='Path to COCO annotations JSON file.')
-    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Downloads//CardDetection_draw',
+    parser.add_argument('--coco_json_path', type=str, default='/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection2.json', help='Path to COCO annotations JSON file.')
+    parser.add_argument('--output_dir', type=str, default='/Users/nikornlansa/Downloads/DocumentDetection2_draw',
                         help='Path to COCO annotations JSON file.')
 
     args = parser.parse_args()

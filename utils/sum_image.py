@@ -46,16 +46,19 @@ def read_csv_to_list(file_path):
 # array4 = [3625, 3591, 3138, 3120, 3306, 3162, 2865, 3499, 3456, 3524, 3146, 3256, 3084, 3151, 3585,2804,3487,2883,2941,3358,2994,3081,2956,3122,2676,3451,2977,3332,3336, 2845, 3408, 2867,2963
 # ,3497]
 
-array1 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc3/tom_filter.txt")
-array2 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc3/dom_filter.txt")
-array3 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc3/pui_filter.txt")
+array1 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc1/tom_filter.txt")
+array2 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc1/dom_filter.txt")
+array3 = read_csv_to_list("/Users/nikornlansa/Workspace/ClearScanner/Custom-keypoint-detection/dataset/clean/doc1/pui_filter.txt")
+
+
 
 #remove empty string
 array1 = filter(None, array1)
 array2 = filter(None, array2)
 array3 = filter(None, array3)
-#array4 = filter(None, array4)
-#array4 = filter(None, array4)
+
+
+
 # Convert arrays to sets
 set1 = set(array1)
 set2 = set(array2)

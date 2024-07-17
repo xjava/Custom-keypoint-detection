@@ -17,22 +17,30 @@ def filter_out_image_ids(coco_path, image_ids):
 
 
 if __name__ == "__main__":
-    # มี่ห่วง 84,141,144,231,258,259,260,265,269,288
-    remove_from_DocumentDetection = [2, 17, 27, 29, 31,33, 50, 58, 66, 76, 79,80,84, 93, 99,100,112, 130, 133, 136,137, 149, 159, 158, 186, 195, 206,
-                                     221,174,175,184,189,190,191,198,210,255,250,288,290,295,296,
-                                     233, 249, 272, 278, 281, 282, 329, 393, 429, 545, 605, 643, 661, 668, 699, 716,
-                                     720, 721, 734, 737, 741, 749, 988,303,326,328,332,334,347
-                                     990, 993, 995, 1030, 1051, 1072, 1078, 1098, 1222, 1248, 1252]
+
+    #เก่า remove_from_DocumentDetection = [2, 17, 19, 27, 29, 31, 33, 38, 39, 40, 46, 50, 58, 66, 76, 79, 80, 84, 93, 99, 101, 112, 130, 133, 135, 136, 137, 141, 144, 147, 149, 152, 155, 158, 159, 174, 175, 184, 186, 189, 190, 191, 195, 198, 206, 210, 221, 231, 233, 240, 249, 250, 255, 258, 259, 260, 265, 269, 272, 278, 281, 282, 288, 290, 295, 296, 303, 326, 328, 329, 332, 334, 347, 393, 429, 545, 577, 605, 643, 661, 668, 699, 716, 720, 721, 734, 735, 737, 740, 741, 749, 988, 990, 993, 995, 1030, 1051, 1072, 1078, 1098, 1222, 1248, 1252]
+
+    remove_from_DocumentDetection = [84,141,144,231,240,258,259,260,265,269,577, 573,608,932,933,983,1015,1097, 1189,1098,1205] #มีห่วง
+                                    #[1019, 1191]
+    remove_from_DocumentDetection2 = [1708, 1740, 1745, 1764, 1809, 1810, 1889, 1890, 1938, 1962, 2015, 2016, 2283,
+                                      2301, 2309, 2316, 2318, 2319, 2327, 2329, 2367]#done
+    remove_from_CardDetection = [1538, 1575, 1686]#done
     remove_from_BoardDetection = [1287, 1310, 1320, 1358, 1406, 1411, 1413, 1430, 1447]
-    remove_from_CardDetection = [1533, 1538, 1575, 1685, 1686]
+
     remove_from_BookDetection = []
-    remove_from_DocumentDetection2 = [1708, 1740, 1745, 2279, 1764, 2283, 1809, 1810, 1824, 2301, 2306, 2309, 1890,
-                                      1909, 2316, 1938, 1962, 2038, 2053, 2054, 2367, 2381, 2390, 2404, 2408, 2318,
-                                      2319, 1824]
+
+    remove_fromCordDetection = [2640, 2649, 2653, 2659, 2663, 2668, 2670, 2671, 2676, 2683, 2710, 2717, 2723, 2728, 2744, 2746, 2747, 2760, 2762,
+     2763, 2765, 2768, 2775, 2791, 2792, 2796, 2800, 2804, 2814, 2817, 2819, 2845, 2854, 2855, 2861, 2865, 2867, 2868,
+     2883, 2898, 2899, 2909, 2919, 2920, 2941, 2943, 2947, 2956, 2963, 2969, 2970, 2977, 2989, 2994, 3016, 3023, 3042,
+     3055, 3062, 3081, 3084, 3120, 3122, 3138, 3142, 3146, 3147, 3150, 3151, 3156, 3162, 3218, 3219, 3235, 3256, 3263,
+     3279, 3306, 3309, 3326, 3330, 3332, 3333, 3336, 3340, 3349, 3358, 3400, 3408, 3410, 3413, 3419, 3426, 3429, 3435,
+     3451, 3456, 3465, 3471, 3474, 3487, 3491, 3495, 3497, 3499, 3514, 3516, 3524, 3525, 3547, 3549, 3562, 3571, 3578,
+     3585, 3591, 3625]
+
     remove_from_MendeleyDetection = [50089, 50123, 50137, 50150, 50182, 50210, 50215, 50226, 50240, 50395, 50408, 50420,
                                      50459, 50498, 50516, 50566, 50590, 50627, 50684]
-    remove_from_DocumentDetection3 = [3690, 3695, 3718, 3719, 3720, 3723, 3724, 3730, 3731, 3741, 3736, 3754, 3767,
-                                      3780, 3781, 3783, 3791, 3798, 3815, 3818, 3819, 3829, 3842, 3847, 3855, 3867,
+    remove_from_DocumentDetection3 = [3690, 3695, 3718, 3720, 3724, 3730, 3731, 3741, 3736, 3754, 3767,
+                                      3780, 3783, 3791, 3798, 3815, 3818, 3819, 3829, 3842, 3847, 3855, 3867,
                                       3868, 3870,
                                       3871, 3872, 3873, 3879, 3880, 3887, 3888, 3889, 3901, 3905, 3908, 3909, 3911, 3914,
                                       3920, 3927, 3926, 3930, 3932, 3933, 3945, 3947, 3948, 3967, 3971, 3974, 3980,
@@ -58,24 +66,24 @@ if __name__ == "__main__":
     # ภาพไม่มีคุณภาพ 4986,4987,4988,4989,4992,4994,4995,4999,5001,5002,5011,5012,5015,5013,5016,5017,5018,5019,5020,5022,5024,5025,5026,5041
 
     # **** จริงๆต้องเอา 133 ออก ไม่ใช่ 113
+    # filter_out_image_ids(
+    #     "/Users/nikornlansa/Downloads/DocumentDetection-80.json",
+    #     remove_from_DocumentDetection)
+    # filter_out_image_ids(
+    #     "/Users/nikornlansa/Downloads/BoardDetection-77.json",
+    #     remove_from_BoardDetection)
+    # filter_out_image_ids(
+    #     "/Users/nikornlansa/Downloads/CardDetection-81.json",
+    #     remove_from_CardDetection)
+    # filter_out_image_ids(
+    #     "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/BookDetection.json",
+    #     remove_from_BookDetection)
     filter_out_image_ids(
-        "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection.json",
-        remove_from_DocumentDetection)
-    filter_out_image_ids(
-        "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/BoardDetection.json",
-        remove_from_BoardDetection)
-    filter_out_image_ids(
-        "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/CardDetection.json",
-        remove_from_CardDetection)
-    filter_out_image_ids(
-        "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/BookDetection.json",
-        remove_from_BookDetection)
-    filter_out_image_ids(
-        "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection2.json",
+        "/Users/nikornlansa/Downloads/DocumentDetection2-84.json",
         remove_from_DocumentDetection2)
-    filter_out_image_ids(
-        "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/MendeleyDetection.json",
-        remove_from_MendeleyDetection)
-    filter_out_image_ids(
-        "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/DocumentDetection3.json",
-        remove_from_DocumentDetection3)
+    # filter_out_image_ids(
+    #     "/Users/nikornlansa/Workspace/ML/ClearScanner/sync/DocumentCornerLocalization/datasets/MendeleyDetection.json",
+    #     remove_from_MendeleyDetection)
+    #filter_out_image_ids("/Users/nikornlansa/Downloads/DocumentDetection3-82.json", remove_from_DocumentDetection3)
+    #filter_out_image_ids("/Users/nikornlansa/Downloads/CordDetection.json", remove_fromCordDetection)
+
